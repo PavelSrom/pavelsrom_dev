@@ -3,9 +3,24 @@ module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
+    './ui/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      maxWidth: {
+        container: '1408px',
+      },
+      margin: {
+        ['screen-adaptive']: '10vw',
+      },
+      colors: {
+        primary: '#228BE6',
+        lightblue: '#E7F5FF',
+        lightgray: '#F8F8F8',
+        dark3: '#5C5F66',
+        gray9: '#212529',
+      },
+    },
   },
   plugins: [],
 }

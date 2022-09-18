@@ -14,7 +14,9 @@
     "@mantine/core": "^5.3.3",
     "@mantine/hooks": "^5.3.3",
     "@mantine/next": "^5.3.3",
+    "clsx": "^1.2.1",
     "next": "12.3.0",
+    "next-translate": "^1.5.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
