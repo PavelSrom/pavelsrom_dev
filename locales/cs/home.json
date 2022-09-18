@@ -1,4 +1,6 @@
 {
-	"intro_title": "Moderní web s ohledem na koncové uživatele.",
-	"intro_title_highlighted": "Vždy."
+	"landing": {
+		"title": "Moderní web s ohledem na koncové uživatele.",
+		"highlighted": "Vždy."
+	}
 }

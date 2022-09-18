@@ -15,7 +15,7 @@ const classnames: Record<TextVariant, string> = {
   h2: 'text-2xl lg:text-3xl font-bold',
   body: 'text-lg lg:text-xl font-light',
   caption: 'text-sm lg:text-base font-light',
-  leading: 'text-3xl lg:text-6xl font-bold',
+  leading: 'text-4xl lg:text-5xl xl:text-6xl font-bold',
 }
 
 export interface TextProps {

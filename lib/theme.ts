@@ -9,4 +9,11 @@ export const mantineTheme: MantineThemeOverride = {
     lg: 1024,
     xl: 1280,
   },
+  components: {
+    Button: {
+      defaultProps: {
+        radius: 8,
+      },
+    },
+  },
 }

@@ -1,21 +1,21 @@
-import type { NextPage } from 'next'
 import { Landing } from 'components/landing'
+import type { NextPage } from 'next'
 import { Text } from 'ui'
 import { useTranslation } from 'lib/translation'
 import { Button } from '@mantine/core'
 
-const Home: NextPage = () => {
-  const { t } = useTranslation('home')
+const About: NextPage = () => {
+  const { t } = useTranslation('about')
 
   return (
     <>
       <Landing
-        illustration="web_devices"
+        illustration="personal_info"
         textContent={
           <>
-            <Text variant="leading">
-              {t('landing.title')}
-              <span className="text-primary"> {t('landing.highlighted')}</span>
+            <Text variant="leading">{t('landing.title')}</Text>
+            <Text variant="h2" className="font-light mt-8">
+              {t('landing.description')}
             </Text>
             <Button size="xl" className="mt-16">
               Read the blog
@@ -27,4 +27,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default About

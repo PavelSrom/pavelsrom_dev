@@ -14,7 +14,7 @@ module.exports = {
         ['screen-adaptive']: '10vw',
       },
       colors: {
-        primary: '#228BE6',
+        primary: '#4DABF7',
         lightblue: '#E7F5FF',
         lightgray: '#F8F8F8',
         dark3: '#5C5F66',
