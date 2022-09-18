@@ -14,10 +14,10 @@ const elements: Record<TextVariant, keyof JSX.IntrinsicElements> = {
 const classnames: Record<TextVariant, string> = {
   h1: 'text-4xl lg:text-5xl font-bold',
   h2: 'text-2xl lg:text-3xl font-bold',
-  sub: 'text-2xl lg:text-3xl font-light',
-  body: 'text-lg lg:text-xl font-light',
-  caption: 'text-sm lg:text-base font-light',
-  leading: 'text-4xl lg:text-5xl xl:text-6xl font-bold',
+  sub: 'text-2xl lg:text-3xl font-light md:leading-normal',
+  body: 'text-lg lg:text-xl font-light md:leading-normal',
+  caption: 'text-sm lg:text-base font-light md:leading-normal',
+  leading: 'text-4xl md:text-5xl xl:text-6xl font-bold',
 }
 
 export interface TextProps {
