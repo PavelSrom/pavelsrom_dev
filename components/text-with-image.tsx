@@ -50,7 +50,7 @@ export const TextWithImage = ({
       <img
         src={`/assets/${image}`}
         alt={imageAlt}
-        className="max-w-full h-auto rounded-3xl"
+        className="max-w-2xl w-full h-auto rounded-3xl"
       />
       {caption && (
         <Text variant="caption" className="mt-2">
@@ -63,7 +63,7 @@ export const TextWithImage = ({
   return (
     <section className="flex flex-col">
       <Container className="flex items-center h-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 md:gap-16 lg:gap-24">
+        <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-16 xl:gap-24">
           {textHalf}
           {imageHalf}
         </div>
