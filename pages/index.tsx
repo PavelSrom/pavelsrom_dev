@@ -4,6 +4,27 @@ import { Container, Text, WhitespaceDivider } from 'ui'
 import { useTranslation } from 'lib/translation'
 import { Button } from '@mantine/core'
 import { TextWithImage } from 'components/text-with-image'
+import {
+  AccountMultipleIcon,
+  AppleIcon,
+  ApplicationBracketsIcon,
+  ArrowExpandAllIcon,
+  BrainIcon,
+  CalendarIcon,
+  ClockIcon,
+  CocktailIcon,
+  DumbbellIcon,
+  EarbudsIcon,
+  GithubIcon,
+  LanguageIcon,
+  LaptopIcon,
+  LinkedinIcon,
+  LocationIcon,
+  PhoneIcon,
+  SchoolIcon,
+  VectorCircleIcon,
+  WatchIcon,
+} from 'ui/icons'
 
 const Home: NextPage = () => {
   const { t } = useTranslation('home')
@@ -64,6 +85,25 @@ const Home: NextPage = () => {
         }
       />
       <WhitespaceDivider tight />
+      <ApplicationBracketsIcon color="#ff00ff" size="xxlarge" />
+      <VectorCircleIcon color="#ff00ff" size="xxlarge" />
+      <SchoolIcon color="#ff00ff" size="xxlarge" />
+      <ArrowExpandAllIcon color="#ff00ff" size="xxlarge" />
+      <DumbbellIcon color="#ff00ff" size="xxlarge" />
+      <BrainIcon color="#ff00ff" size="xxlarge" />
+      <CocktailIcon color="#ff00ff" size="xxlarge" />
+      <LanguageIcon color="#ff00ff" size="xxlarge" />
+      <CalendarIcon color="#ff00ff" size="xxlarge" />
+      <ClockIcon color="#ff00ff" size="xxlarge" />
+      <LocationIcon color="#ff00ff" size="xxlarge" />
+      <AccountMultipleIcon color="#ff00ff" size="xxlarge" />
+      <AppleIcon color="#ff00ff" size="xxlarge" />
+      <LaptopIcon color="#ff00ff" size="xxlarge" />
+      <PhoneIcon color="#ff00ff" size="xxlarge" />
+      <WatchIcon color="#ff00ff" size="xxlarge" />
+      <EarbudsIcon color="#ff00ff" size="xxlarge" />
+      <GithubIcon color="#ff00ff" size="xxlarge" />
+      <LinkedinIcon color="#ff00ff" size="xxlarge" />
     </>
   )
 }
