@@ -1,10 +1,11 @@
 import clsx from 'clsx'
 
-type TextVariant = 'h1' | 'h2' | 'body' | 'caption' | 'leading'
+type TextVariant = 'h1' | 'h2' | 'sub' | 'body' | 'caption' | 'leading'
 
 const elements: Record<TextVariant, keyof JSX.IntrinsicElements> = {
   h1: 'h1',
   h2: 'h2',
+  sub: 'p',
   body: 'p',
   caption: 'p',
   leading: 'h1',
@@ -13,6 +14,7 @@ const elements: Record<TextVariant, keyof JSX.IntrinsicElements> = {
 const classnames: Record<TextVariant, string> = {
   h1: 'text-4xl lg:text-5xl font-bold',
   h2: 'text-2xl lg:text-3xl font-bold',
+  sub: 'text-2xl lg:text-3xl font-light',
   body: 'text-lg lg:text-xl font-light',
   caption: 'text-sm lg:text-base font-light',
   leading: 'text-4xl lg:text-5xl xl:text-6xl font-bold',
@@ -34,7 +36,7 @@ export const Text = ({
   return (
     <Element
       className={clsx(classnames[variant], {
-        [className]: !!className,
+        [className!]: !!className,
       })}
     >
       {children}

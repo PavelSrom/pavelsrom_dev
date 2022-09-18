@@ -4,13 +4,13 @@ import { Text } from 'ui'
 import { useTranslation } from 'lib/translation'
 import { Button } from '@mantine/core'
 
-const About: NextPage = () => {
-  const { t } = useTranslation('about')
+const Experience: NextPage = () => {
+  const { t } = useTranslation('tools')
 
   return (
     <>
       <Landing
-        illustration="personal_info"
+        illustration="static_website"
         textContent={
           <>
             <Text variant="leading">{t('landing.title')}</Text>
@@ -27,4 +27,4 @@ const About: NextPage = () => {
   )
 }
 
-export default About
+export default Experience
