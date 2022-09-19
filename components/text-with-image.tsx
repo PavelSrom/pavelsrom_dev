@@ -63,7 +63,7 @@ export const TextWithImage = ({
   return (
     <section className="flex flex-col">
       <Container className="flex items-center h-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-16 xl:gap-24">
+        <div className="grid grid-cols-12 lg:gap-16 2xl:gap-24">
           {textHalf}
           {imageHalf}
         </div>

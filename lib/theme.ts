@@ -15,5 +15,17 @@ export const mantineTheme: MantineThemeOverride = {
         radius: 8,
       },
     },
+    TextInput: {
+      defaultProps: {
+        radius: 8,
+        size: 'lg',
+      },
+    },
+    Textarea: {
+      defaultProps: {
+        radius: 8,
+        size: 'lg',
+      },
+    },
   },
 }
