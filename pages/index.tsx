@@ -63,7 +63,7 @@ const Home: NextPage = () => {
         text={t('greeting.text')}
         cta={
           <Button size="lg" variant="light" className="mt-20">
-            CTA to tools page
+            {t('greeting.cta')}
           </Button>
         }
       />
@@ -78,7 +78,7 @@ const Home: NextPage = () => {
         textPosition="left"
         cta={
           <Button size="lg" variant="light" className="mt-20">
-            CTA to about page
+            {t('fitness.cta')}
           </Button>
         }
       />

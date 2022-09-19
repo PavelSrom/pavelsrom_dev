@@ -5,7 +5,8 @@
 	},
 	"greeting": {
 		"title": "Hey there!",
-		"text": "I’m Pavel, a web developer currently living in Copenhagen, Denmark. I help people and companies build their projects by utilizing the web’s full potential."
+		"text": "I’m Pavel, a web developer currently living in Copenhagen, Denmark. I help people and companies build their projects by utilizing the web’s full potential.",
+		"cta": "See what I work with"
 	},
 	"feature_grid": {
 		"title": "How can I help you?",
@@ -28,10 +29,16 @@
 	},
 	"fitness": {
 		"title": "Fitness at heart",
-		"text": "That’s right. I’ve been doing sports essentially my whole life, but these days I practice mostly weighted calisthenics, weights and running."
+		"text": "That’s right. I’ve been doing sports essentially my whole life, but these days I practice mostly weighted calisthenics, weights and running.",
+		"cta": "Learn more about me"
 	},
 	"contact": {
 		"title": "Let's build something great",
-		"text": "Anything that caught your attention? Drop a message and let’s find out how we can work together!"
+		"text": "Anything that caught your attention? Drop a message and let’s find out how we can work together!",
+		"placeholders": {
+			"email": "Email",
+			"message": "What's on your mind?"
+		},
+		"cta": "Message me"
 	}
 }

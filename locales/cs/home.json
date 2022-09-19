@@ -5,7 +5,8 @@
 	},
 	"greeting": {
 		"title": "Ahojda!",
-		"text": "Jsem Pavel, webový vývojář, který v současné době žije v Kodani v Dánsku. Pomáhám lidem a firmám vytvářet jejich projekty využitím plného potenciálu webu."
+		"text": "Jsem Pavel, webový vývojář, který v současné době žije v Kodani v Dánsku. Pomáhám lidem a firmám vytvářet jejich projekty využitím plného potenciálu webu.",
+		"cta": "Koukni se, s čím pracuju"
 	},
 	"feature_grid": {
 		"title": "Jak ti můžu pomoci?",
@@ -28,10 +29,16 @@
 	},
 	"fitness": {
 		"title": "V srdci fitness",
-		"text": "Přesně tak. Sportuju v podstatě celý život, ale v současné době se věnuju hlavně kalistenice s přídavnými závažími, činkám a běhu."
+		"text": "Přesně tak. Sportuju v podstatě celý život, ale v současné době se věnuju hlavně kalistenice s přídavnými závažími, činkám a běhu.",
+		"cta": "Zjisti o mně více"
 	},
 	"contact": {
 		"title": "Vytvořme něco skvělého",
-		"text": "Zaujalo tě něco? Napiš mi zprávu a třeba uvidíme, jak bychom mohli spolupracovat!"
+		"text": "Zaujalo tě něco? Napiš mi zprávu a třeba uvidíme, jak bychom mohli spolupracovat!",
+		"placeholders": {
+			"email": "Email",
+			"message": "Copak máš na srdci?"
+		},
+		"cta": "Napiš mi"
 	}
 }
