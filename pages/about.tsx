@@ -58,11 +58,12 @@ const About: NextPage = () => {
       />
       <WhitespaceDivider />
       <TextWithImage
-        image="portrait.png"
-        imageAlt="hello world"
+        image="pulpit_rock.png"
+        imageAlt="Me in Norway"
         title={t('travel.title')}
         text={t('travel.text')}
         textPosition="left"
+        caption={t('travel.caption')}
       />
       <WhitespaceDivider />
       <FeatureGrid title={t('feature_grid.title')} items={gridItems} />

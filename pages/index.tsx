@@ -58,7 +58,7 @@ const Home: NextPage = () => {
       <WhitespaceDivider tight />
       <TextWithImage
         image="portrait.png"
-        imageAlt="some alt text"
+        imageAlt="Me in portrait mode"
         title={t('greeting.title')}
         text={t('greeting.text')}
         cta={

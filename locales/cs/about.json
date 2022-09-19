@@ -9,12 +9,13 @@
 	},
 	"travel": {
 		"title": "Zvídavý průzkumník",
-		"text": "Každé nové místo, kam se vydám, má svou jedinečnost, kterou bych rád objevil. Je to skvělý způsob, jak vystoupit z komfortní zóny a vytvořit si vzpomínky, které zůstanou na celý život."
+		"text": "Každé nové místo, kam se vydám, má svou jedinečnost, kterou bych rád objevil. Je to skvělý způsob, jak vystoupit z komfortní zóny a vytvořit si vzpomínky, které zůstanou na celý život.",
+		"caption": "Já na výletě na Preikestolen, Norsko"
 	},
 	"feature_grid": {
 		"title": "Počkat, to není všechno!",
 		"0": {
-			"title": "Fitness and running",
+			"title": "Fitness a běhání",
 			"text": "Své zdraví beru vážně, a přestože jsem v životě provozoval mnoho různých sportů, v posledních letech jsem zůstal u kombinace kalisteniky s činkami. Jako malý kardio doplněk si chodím zhruba dvakrát týdně zaběhat."
 		},
 		"1": {
