@@ -2,5 +2,36 @@
 	"landing": {
 		"title": "“Hvad har du arbejdet på?”",
 		"description": "Få mere at vide om mine tidligere projekter og stillinger"
+	},
+	"helped": "Jeg hjalp med",
+	"ca": {
+		"title": "Full-stack udvikler",
+		"company": "Copyright Agent",
+		"period": "februar 2022 - juli 2022",
+		"employment": "fultid",
+		"location": "on-site i København, Danmark",
+		"size": "51-200 ansatte",
+		"description": "I 6 måneder arbejdede jeg i et team på omkring 12 udviklere på en stor microservice-applikation. Jeg var primært ansvarlig for udviklingen af frontend'en, som blev bygget med React og TypeScript. Jeg arbejdede også på backend'en, som blev bygget med Node.js og TypeScript.",
+		"helped": {
+			"0": "forbedre udvikleroplevelsen gennem bedre typning og fastsættelse af TypeScript-standarder for hele ingeniørteamet",
+			"1": "opbygge nye funktioner fra front til back, herunder arbejde med databaser og databasemigrationer",
+			"2": "uddanne mine kolleger i TypeScript gennem workshops og skrive omfattende dokumentation med typeudfordringer",
+			"3": "forbedre eksisterende designsystemer i overensstemmelse med stilguiden"
+		}
+	},
+	"dt": {
+		"title": "Front-end udvikler",
+		"company": "Designers Trust",
+		"period": "marts 2020 - januar 2022",
+		"employment": "deltid",
+		"location": "fjernt fra København, Danmark",
+		"size": "11-50 ansatte",
+		"description": "Mit job hos Designers Trust bestod i at udvikle og vedligeholde en webapplikation fra bunden. Jeg arbejdede udelukkende på frontend-applikationen, der var bygget i React og TypeScript. Takket være mit og min kollegas arbejde er applikationen meget gennemtypet.",
+		"helped": {
+			"0": "opbygge hele applikationen fra bunden til den er forbundet med over 150 endpoints",
+			"1": "sikre fremragende typesikkerhed ved at sikre over 99 % typedækning",
+			"2": "udføre mange refaktoreringer, f.eks. fra JavaScript til TypeScript",
+			"3": "opbygge brugergrænseflader i overensstemmelse med stilguiden"
+		}
 	}
 }

@@ -2,5 +2,36 @@
 	"landing": {
 		"title": "“What have you worked on?”",
 		"description": "Learn more about my past projects and positions"
+	},
+	"helped": "I helped with",
+	"ca": {
+		"title": "Full-stack developer",
+		"company": "Copyright Agent",
+		"period": "February 2022 - July 2022",
+		"employment": "full-time",
+		"location": "on-site from Copenhagen, Denmark",
+		"size": "51-200 employees",
+		"description": "For 6 months, I was working in a team of about 12 developers on a large microservice application. I was responsible mainly for the development of the frontend, which was built with React and TypeScript. I also worked on the backend, which was built with Node.js and TypeScript.",
+		"helped": {
+			"0": "improving developer experience through better typings and setting TypeScript standards for the whole engineering team",
+			"1": "building new features from front to back, including working with REST APIs, databases and database migrations",
+			"2": "educating my colleagues on TypeScript through workshops and writing extensive documentation with type challenges",
+			"3": "enhancing existing design systems in accordance with the style guide"
+		}
+	},
+	"dt": {
+		"title": "Front-end developer",
+		"company": "Designers Trust",
+		"period": "March 2020 - January 2022",
+		"employment": "part-time",
+		"location": "remote from Copenhagen, Denmark",
+		"size": "11-50 employees",
+		"description": "My job at Designers Trust was to develop and maintain a web application from scratch. I was working exclusively on the frontend built in React and TypeScript. Thanks to my and my colleague's work, the application is very thouroughly typed.",
+		"helped": {
+			"0": "building the whole application from scratch to it being connected to over 150 endpoints",
+			"1": "ensuring top-notch type safety by securing over 99% type coverage",
+			"2": "executing many refactors, e.g. from JavaScript to TypeScript",
+			"3": "building user interfaces in accordance with the style guide"
+		}
 	}
 }

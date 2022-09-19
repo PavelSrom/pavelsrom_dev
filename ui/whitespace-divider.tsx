@@ -3,8 +3,8 @@ export interface WhitespaceDividerProps {
 }
 
 const classnames = {
-  standard: 'h-64',
-  tight: 'h-32',
+  standard: 'h-56',
+  tight: 'h-28',
 } as const
 
 export const WhitespaceDivider = ({ tight }: WhitespaceDividerProps) => (
