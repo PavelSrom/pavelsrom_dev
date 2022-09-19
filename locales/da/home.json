@@ -2,5 +2,23 @@
 	"landing": {
 		"title": "Det moderne web med slutbrugerne i tankerne.",
 		"highlighted": "Altid."
+	},
+	"feature_grid": {
+		"0": {
+			"title": "Brugergrænseflader i stor skala",
+			"text": "I love building user interfaces that please the human eye and feel snappy. They’re almost like my second home! I like to approach building them long-term by paying extra attention to type safety, code quality and readability."
+		},
+		"1": {
+			"title": "Tager sig af det hele",
+			"text": "The user interface isn’t my only territory - I can navigate my way around on the server, too! Throughout my personal projects and professional positions, I have worked with databases, REST APIs and the cloud."
+		},
+		"2": {
+			"title": "Undervisning og ledelse",
+			"text": "I’ve had the privilege to educate my colleagues about topics I’m passionate about, such as TypeScript. Apart from that, I’ve also taken up some lead positions, particularly in university and exam projects."
+		},
+		"3": {
+			"title": "Det store perspektiv",
+			"text": "Details are important, but sometimes it’s necessary to zoom out a little. From my own experience, taking the initiative to speak up or having the audacity to swap one tool for another can save tons of time, nerves, and coffee, of course."
+		}
 	}
 }

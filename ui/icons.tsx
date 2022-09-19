@@ -36,14 +36,14 @@ export const VectorCircleIcon = ({
   </svg>
 )
 
-export const SchoolIcon = ({
+export const HumanMaleBoardIcon = ({
   size = 'small',
   color = PRIMARY_COLOR,
 }: IconProps) => (
   <svg viewBox="0 0 24 24" className={iconSizeClassnames[size]}>
     <path
       fill={color}
-      d="M12 3L1 9L5 11.18V17.18L12 21L19 17.18V11.18L21 10.09V17H23V9L12 3M18.82 9L12 12.72L5.18 9L12 5.28L18.82 9M17 16L12 18.72L7 16V12.27L12 15L17 12.27V16Z"
+      d="M20,17A2,2 0 0,0 22,15V4A2,2 0 0,0 20,2H9.46C9.81,2.61 10,3.3 10,4H20V15H11V17M15,7V9H9V22H7V16H5V22H3V14H1.5V9A2,2 0 0,1 3.5,7H15M8,4A2,2 0 0,1 6,6A2,2 0 0,1 4,4A2,2 0 0,1 6,2A2,2 0 0,1 8,4Z"
     />
   </svg>
 )
