@@ -3,22 +3,35 @@
 		"title": "Det moderne web med slutbrugerne i tankerne.",
 		"highlighted": "Altid."
 	},
+	"greeting": {
+		"title": "Hej med dig!",
+		"text": "Jeg hedder Pavel og er webudvikler og bor i øjeblikket i København, Danmark. Jeg hjælper folk og virksomheder med at opbygge deres projekter ved at udnytte web'ets fulde potentiale."
+	},
 	"feature_grid": {
+		"title": "Hvordan kan jeg hjælpe dig?",
 		"0": {
 			"title": "Brugergrænseflader i stor skala",
-			"text": "I love building user interfaces that please the human eye and feel snappy. They’re almost like my second home! I like to approach building them long-term by paying extra attention to type safety, code quality and readability."
+			"text": "Jeg elsker at skabe brugergrænseflader, der er til glæde for øjet og føles hurtige. De er næsten som mit andet hjem! Jeg kan godt lide at bygge dem på lang sigt ved at være ekstra opmærksom på typesikkerhed, kodekvalitet og læsbarhed."
 		},
 		"1": {
 			"title": "Tager sig af det hele",
-			"text": "The user interface isn’t my only territory - I can navigate my way around on the server, too! Throughout my personal projects and professional positions, I have worked with databases, REST APIs and the cloud."
+			"text": "Brugergrænsefladen er ikke mit eneste område - jeg kan også navigere rundt på serveren! Gennem mine personlige projekter og professionelle stillinger har jeg også arbejdet med databaser, REST API'er og cloud."
 		},
 		"2": {
 			"title": "Undervisning og ledelse",
-			"text": "I’ve had the privilege to educate my colleagues about topics I’m passionate about, such as TypeScript. Apart from that, I’ve also taken up some lead positions, particularly in university and exam projects."
+			"text": "Jeg har haft det privilegium at uddanne mine kolleger i emner, som jeg brænder for, f.eks. TypeScript. Udover det har jeg også indtaget nogle ledende stillinger, især i universitets- og eksamensprojekter."
 		},
 		"3": {
 			"title": "Det store perspektiv",
-			"text": "Details are important, but sometimes it’s necessary to zoom out a little. From my own experience, taking the initiative to speak up or having the audacity to swap one tool for another can save tons of time, nerves, and coffee, of course."
+			"text": "Detaljer er vigtige, men nogle gange er det nødvendigt at zoome lidt ud. Ud fra min egen erfaring kan det spare masser af tid, nerver og kaffe, hvis man tager initiativ til at sige noget eller har modet til at bytte et værktøj ud med et andet."
 		}
+	},
+	"fitness": {
+		"title": "Fitness i hjertet",
+		"text": "Det er rigtigt. Jeg har dyrket sport stort set hele mit liv, men nu om dage træner jeg mest vægtet calisthenics, vægte og løb."
+	},
+	"contact": {
+		"title": "Lad os skabe noget stort",
+		"text": "Noget der fangede din opmærksomhed? Send en besked, og lad os finde ud af, hvordan vi kan arbejde sammen!"
 	}
 }

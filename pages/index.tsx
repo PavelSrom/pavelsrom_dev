@@ -11,6 +11,7 @@ import {
   VectorCircleIcon,
 } from 'ui/icons'
 import { FeatureGrid, IconItem } from 'components/feature-grid'
+import { ContactForm } from 'components/home/contact-form'
 
 const Home: NextPage = () => {
   const { t } = useTranslation('home')
@@ -58,34 +59,31 @@ const Home: NextPage = () => {
       <TextWithImage
         image="portrait.png"
         imageAlt="some alt text"
-        title="Hey there!"
-        text="I’m Pavel, a web developer currently living in Copenhagen, Denmark. I help people and companies build their projects by utilizing the web’s full potential."
+        title={t('greeting.title')}
+        text={t('greeting.text')}
         cta={
           <Button size="lg" variant="light" className="mt-20">
-            Learn more about me
+            CTA to tools page
           </Button>
         }
       />
       <WhitespaceDivider />
-      <Container>
-        <Text variant="h1" className="mb-8">
-          How can I help you?
-        </Text>
-        <FeatureGrid items={gridItems} />
-      </Container>
+      <FeatureGrid title={t('feature_grid.title')} items={gridItems} />
       <WhitespaceDivider />
       <TextWithImage
         image="healthy_habit.svg"
         imageAlt="healthy_habit"
-        title="Fitness at heart"
-        text="That’s right. I’ve been doing sports essentially my whole life, but these days I practice mostly weighted calisthenics, weights and running."
+        title={t('fitness.title')}
+        text={t('fitness.text')}
         textPosition="left"
         cta={
           <Button size="lg" variant="light" className="mt-20">
-            Read the blog
+            CTA to about page
           </Button>
         }
       />
+      <WhitespaceDivider />
+      <ContactForm />
       <WhitespaceDivider tight />
     </>
   )

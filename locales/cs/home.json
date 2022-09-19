@@ -3,22 +3,35 @@
 		"title": "Moderní web s ohledem na koncové uživatele.",
 		"highlighted": "Vždy."
 	},
+	"greeting": {
+		"title": "Ahojda!",
+		"text": "Jsem Pavel, webový vývojář, který v současné době žije v Kodani v Dánsku. Pomáhám lidem a firmám vytvářet jejich projekty využitím plného potenciálu webu."
+	},
 	"feature_grid": {
+		"title": "Jak ti můžu pomoci?",
 		"0": {
 			"title": "Uživatelská rozhraní ve velkém",
-			"text": "I love building user interfaces that please the human eye and feel snappy. They’re almost like my second home! I like to approach building them long-term by paying extra attention to type safety, code quality and readability."
+			"text": "Miluju vytvářet uživatelská rozhraní, která lahodí lidskému oku a jsou svižná. Jsou skoro jako můj druhý domov! Rád k jejich tvorbě přistupuju dlouhodobě a věnuju zvýšenou pozornost bezpečnosti typů, kvalitě kódu a čitelnosti."
 		},
 		"1": {
-			"title": "Postarání se o všechno",
-			"text": "The user interface isn’t my only territory - I can navigate my way around on the server, too! Throughout my personal projects and professional positions, I have worked with databases, REST APIs and the cloud."
+			"title": "Postarat se o všechno",
+			"text": "Uživatelské rozhraní není mým jediným územím - dokážu se orientovat i na serveru! V rámci svých osobních projektů a profesních pozic jsem pracoval i s databázemi, rozhraními REST API a cloudem."
 		},
 		"2": {
 			"title": "Učení a vedení",
-			"text": "I’ve had the privilege to educate my colleagues about topics I’m passionate about, such as TypeScript. Apart from that, I’ve also taken up some lead positions, particularly in university and exam projects."
+			"text": "Měl jsem tu čest vzdělávat své kolegy v tématech, která mě zajímají, jako je například TypeScript. Kromě toho jsem také zastával některé vedoucí pozice, zejména v univerzitních a zkouškových projektech."
 		},
 		"3": {
 			"title": "Ptačí perspektiva",
-			"text": "Details are important, but sometimes it’s necessary to zoom out a little. From my own experience, taking the initiative to speak up or having the audacity to swap one tool for another can save tons of time, nerves, and coffee, of course."
+			"text": "Detaily jsou důležité, ale někdy je nutné použít širší čočku. Z vlastní zkušenosti vím, že zaujímat iniciativu a ozvat se nebo mít odvahu vyměnit jeden nástroj za jiný může ušetřit spoustu času, nervů a samozřejmě kávy."
 		}
+	},
+	"fitness": {
+		"title": "V srdci fitness",
+		"text": "Přesně tak. Sportuju v podstatě celý život, ale v současné době se věnuju hlavně kalistenice s přídavnými závažími, činkám a běhu."
+	},
+	"contact": {
+		"title": "Vytvořme něco skvělého",
+		"text": "Zaujalo tě něco? Napiš mi zprávu a třeba uvidíme, jak bychom mohli spolupracovat!"
 	}
 }

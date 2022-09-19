@@ -2,5 +2,32 @@
 	"landing": {
 		"title": "“Kdo jsi, ale doopravdy?”",
 		"description": "Seznam se s mým příběhem, vášněmi a zájmy"
+	},
+	"tech": {
+		"title": "Tradiční nadšení pro ‘tech’",
+		"text": "Stejně jako pro mnoho jiných programátorů je mi tech velmi blízká. Sleduju nejnovější inovace v oblasti vývoje webu, každou keynote společnosti Apple a doufám, že do pěti let budeme mít na světě samořídící auta."
+	},
+	"travel": {
+		"title": "Zvídavý průzkumník",
+		"text": "Každé nové místo, kam se vydám, má svou jedinečnost, kterou bych rád objevil. Je to skvělý způsob, jak vystoupit z komfortní zóny a vytvořit si vzpomínky, které zůstanou na celý život."
+	},
+	"feature_grid": {
+		"title": "Počkat, to není všechno!",
+		"0": {
+			"title": "Fitness and running",
+			"text": "Své zdraví beru vážně, a přestože jsem v životě provozoval mnoho různých sportů, v posledních letech jsem zůstal u kombinace kalisteniky s činkami. Jako malý kardio doplněk si chodím zhruba dvakrát týdně zaběhat."
+		},
+		"1": {
+			"title": "Psychologie a duševní zdraví",
+			"text": "Duševní zdraví je stejně důležité jako to fyzické. Pochopení, jak fungují mé myšlenkové vzorce, a praktikování různých relaxačních technik mi umožňuje udržet stres na uzdě a zajistit, že můžu pracovat s čistou hlavou bez jakýchkoli negativních vlivů."
+		},
+		"2": {
+			"title": "Barman a barista",
+			"text": "Kdo by to byl řekl, že mě práce za barem opravdu baví? Ať už jde o přípravu cappuccina, ledového latté, ginu s tonikem nebo jen o povídání si se zákazníky, práce baristy a barmana mě naučila spoustu věcí, ze kterých čerpám dodnes."
+		},
+		"3": {
+			"title": "Učení se jazykům",
+			"text": "Řekl jsem to už mockrát a řeknu to znovu - naučit se anglicky na pokročilou úroveň bylo nejlepší rozhodnutí mého života, a abych šel v jeho stopách, pracuju stejně tvrdě i na své dánštině. Doufejme, že jednoho dne řeknu 'rødgrød med fløde' bez přízvuku!"
+		}
 	}
 }

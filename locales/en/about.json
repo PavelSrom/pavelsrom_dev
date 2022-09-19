@@ -2,5 +2,32 @@
 	"landing": {
 		"title": "“Who are you, really?”",
 		"description": "Discover my story, passions, and interests"
+	},
+	"tech": {
+		"title": "The traditional tech-excitement",
+		"text": "Just like for many other programmers, tech is very close to me. I keep myself updated about the latest innovations within the web, watch every single Apple Keynote, and hope we will have self-driving cars worldwide within 5 years."
+	},
+	"travel": {
+		"title": "A curious explorer",
+		"text": "Every new place I go to has its uniqueness that I would like to discover. It’s a great way to get me out of my comfort zone and make memories that will last for a lifetime."
+	},
+	"feature_grid": {
+		"title": "Wait, that's not all!",
+		"0": {
+			"title": "Fitness and running",
+			"text": "I take my health seriously and even though I’ve played many different sports in my life, in recent years I’ve stuck to a combination of weighted calisthenics and weights. As a little cardio addition, I usually go for a run about twice a week."
+		},
+		"1": {
+			"title": "Psychology and mental health",
+			"text": "Mental health is just as important as physical health. Understanding how my thought patterns work and practicing various relaxation routines allow me to keep my stress at bay and make sure can I work clear-headed without any negative influences."
+		},
+		"2": {
+			"title": "Bartender and barista",
+			"text": "Who would have thought that I really enjoy working behind the bar? Whether it’s through making cappuccinos, ice lattes, gin and tonics or just chatting with customers, being a barista and a bartender taught me many things that I draw from until this day."
+		},
+		"3": {
+			"title": "Language learning",
+			"text": "I’ve said it many times, and I will say it again - learning English to an advanced level has been the best decision of my life, and to follow its footsteps, I’ve been working on my Danish just as hard. Let’s hope that one day I’ll say 'rødgrød med fløde' without accent!"
+		}
 	}
 }

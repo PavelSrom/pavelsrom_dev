@@ -3,14 +3,19 @@
 		"title": "The modern web with end users in mind.",
 		"highlighted": "Always."
 	},
+	"greeting": {
+		"title": "Hey there!",
+		"text": "I’m Pavel, a web developer currently living in Copenhagen, Denmark. I help people and companies build their projects by utilizing the web’s full potential."
+	},
 	"feature_grid": {
+		"title": "How can I help you?",
 		"0": {
 			"title": "User interfaces at scale",
 			"text": "I love building user interfaces that please the human eye and feel snappy. They’re almost like my second home! I like to approach building them long-term by paying extra attention to type safety, code quality and readability."
 		},
 		"1": {
 			"title": "Taking care of everything",
-			"text": "The user interface isn’t my only territory - I can navigate my way around on the server, too! Throughout my personal projects and professional positions, I have worked with databases, REST APIs and the cloud."
+			"text": "The user interface isn’t my only territory - I can navigate my way around on the server, too! Through my personal projects and professional positions, I have also worked with databases, REST APIs and the cloud."
 		},
 		"2": {
 			"title": "Teaching and leadership",
@@ -20,5 +25,13 @@
 			"title": "The big picture",
 			"text": "Details are important, but sometimes it’s necessary to zoom out a little. From my own experience, taking the initiative to speak up or having the audacity to swap one tool for another can save tons of time, nerves, and coffee, of course."
 		}
+	},
+	"fitness": {
+		"title": "Fitness at heart",
+		"text": "That’s right. I’ve been doing sports essentially my whole life, but these days I practice mostly weighted calisthenics, weights and running."
+	},
+	"contact": {
+		"title": "Let's build something great",
+		"text": "Anything that caught your attention? Drop a message and let’s find out how we can work together!"
 	}
 }
