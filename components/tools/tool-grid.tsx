@@ -18,7 +18,7 @@ export const ToolGrid = ({ section, size, icons }: ToolGridProps) => {
       <Text variant="h1" className="mb-8">
         {t(`${section}.name`)}
       </Text>
-      <div className="grid grid-cols-12 gap-8">
+      <div className="grid grid-cols-12 gap-y-8 md:gap-x-8">
         {[...new Array(size).fill(size)].map((_item, index) => (
           <div key={index} className="col-span-12 md:col-span-6 lg:col-span-4">
             <ToolCard
