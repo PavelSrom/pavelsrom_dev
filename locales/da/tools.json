@@ -2,5 +2,111 @@
 	"landing": {
 		"title": "“Hvad arbejder du med?”",
 		"description": "Udforsk de sprog, værktøjer og teknologier, jeg bruger!"
+	},
+	"webdev": {
+		"name": "Webudvikling",
+		"0": {
+			"title": "TypeScript",
+			"description": "Jeg kan bare ikke leve uden den, statiske typer er noget fantastisk"
+		},
+		"1": {
+			"title": "React",
+			"description": "Det mest populære front-end-library til opbygning af grænseflader"
+		},
+		"2": {
+			"title": "Next.js",
+			"description": "Min valgte front-end framework til de fleste projekter"
+		},
+		"3": {
+			"title": "Tailwind CSS",
+			"description": "Supercharging af hvordan jeg tilføjer stilarter til UI-elementer"
+		},
+		"4": {
+			"title": "Material UI & andre",
+			"description": "Populære UI-libraries, men min favorit er Mantine"
+		},
+		"5": {
+			"title": "Node.js & Express",
+			"description": "TypeScript på serveren, nem opbygning af API'er"
+		},
+		"6": {
+			"title": "PostgreSQL",
+			"description": "Den mest populære relationelle database i verden"
+		},
+		"7": {
+			"title": "Prisma",
+			"description": "Efter min mening er den bedste type-sikre ORM til din database"
+		},
+		"8": {
+			"title": "Docker",
+			"description": "Containerisering og mikroservices gjort nemt"
+		},
+		"9": {
+			"title": "Google Cloud",
+			"description": "Når det bliver rigtig alvorligt"
+		}
+	},
+	"apps": {
+		"name": "Apps og software",
+		"0": {
+			"title": "GitHub",
+			"caption": "versionskontrol"
+		},
+		"1": {
+			"title": "Visual Studio Code",
+			"caption": "kodeeditor"
+		},
+		"2": {
+			"title": "GitHub Copilot",
+			"caption": "færdiggørelse af kode"
+		},
+		"3": {
+			"title": "Google Chrome",
+			"caption": "webbrowser"
+		},
+		"4": {
+			"title": "Google Calendar",
+			"caption": "kalender"
+		},
+		"5": {
+			"title": "Gmail",
+			"caption": "email"
+		},
+		"6": {
+			"title": "Todoist",
+			"caption": "opgavestyrer"
+		},
+		"7": {
+			"title": "Notion",
+			"caption": "notatskrivning"
+		},
+		"8": {
+			"title": "iCloud",
+			"caption": "lagring af filer"
+		}
+	},
+	"gear": {
+		"name": "Hverdagsudstyr",
+		"0": {
+			"title": "MacBook Pro 14\""
+		},
+		"1": {
+			"title": "iPhone 13"
+		},
+		"2": {
+			"title": "Apple Watch SE"
+		},
+		"3": {
+			"title": "AirPods 2019"
+		},
+		"4": {
+			"title": "Magic Keyboard"
+		},
+		"5": {
+			"title": "Magic Trackpad"
+		},
+		"6": {
+			"title": "Logitech K470"
+		}
 	}
 }

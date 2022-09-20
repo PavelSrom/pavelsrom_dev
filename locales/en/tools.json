@@ -4,10 +4,10 @@
 		"description": "Explore the languages, tools and technologies I use!"
 	},
 	"webdev": {
-		"name": "Web Development",
+		"name": "Web development",
 		"0": {
 			"title": "TypeScript",
-			"description": "I just can't live without it"
+			"description": "I just can't live without it, static types are something amazing"
 		},
 		"1": {
 			"title": "React",
