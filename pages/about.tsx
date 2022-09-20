@@ -51,8 +51,8 @@ const About: NextPage = () => {
       />
       <WhitespaceDivider tight />
       <TextWithImage
-        image="portrait.png"
-        imageAlt="hello world"
+        image="tech_excitement.jpeg"
+        imageAlt="Me working on my laptop and adjusting my watch"
         title={t('tech.title')}
         text={t('tech.text')}
       />
