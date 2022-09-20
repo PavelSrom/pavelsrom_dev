@@ -45,5 +45,68 @@
 			"title": "Google Cloud",
 			"description": "When things get really serious"
 		}
+	},
+	"apps": {
+		"name": "Apps and software",
+		"0": {
+			"title": "GitHub",
+			"caption": "version control"
+		},
+		"1": {
+			"title": "Visual Studio Code",
+			"caption": "code editor"
+		},
+		"2": {
+			"title": "GitHub Copilot",
+			"caption": "code completion"
+		},
+		"3": {
+			"title": "Google Chrome",
+			"caption": "web browser"
+		},
+		"4": {
+			"title": "Google Calendar",
+			"caption": "calendar"
+		},
+		"5": {
+			"title": "Gmail",
+			"caption": "email"
+		},
+		"6": {
+			"title": "Todoist",
+			"caption": "task manager"
+		},
+		"7": {
+			"title": "Notion",
+			"caption": "note taking"
+		},
+		"8": {
+			"title": "iCloud",
+			"caption": "file storage"
+		}
+	},
+	"gear": {
+		"name": "Everyday gear",
+		"0": {
+			"title": "MacBook Pro 14\""
+		},
+		"1": {
+			"title": "iPhone 13"
+		},
+		"2": {
+			"title": "Apple Watch SE"
+		},
+		"3": {
+			"title": "AirPods 2019"
+		},
+		"4": {
+			"title": "Magic Keyboard"
+		},
+		"5": {
+			"title": "Magic Trackpad"
+		},
+		"6": {
+			"title": "Logitech K470"
+		}
 	}
 }

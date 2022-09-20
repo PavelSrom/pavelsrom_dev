@@ -4,9 +4,48 @@ import { Text, WhitespaceDivider } from 'ui'
 import { useTranslation } from 'lib/translation'
 import { Button } from '@mantine/core'
 import { ToolGrid } from 'components/tools/tool-grid'
+import {
+  AppleIcon,
+  CalendarIcon,
+  ChromeIcon,
+  EarbudsIcon,
+  GithubIcon,
+  IcloudIcon,
+  KeyboardIcon,
+  LaptopIcon,
+  MailIcon,
+  MouseIcon,
+  PencilIcon,
+  PhoneIcon,
+  TodoIcon,
+  VscIcon,
+  WatchIcon,
+} from 'ui/icons'
 
 const Experience: NextPage = () => {
   const { t } = useTranslation('tools')
+
+  const appsIcons = [
+    [<GithubIcon size="large" />],
+    [<VscIcon size="large" />],
+    [<GithubIcon size="large" />],
+    [<ChromeIcon size="large" />],
+    [<CalendarIcon size="large" />],
+    [<MailIcon size="large" />],
+    [<TodoIcon size="large" />],
+    [<PencilIcon size="large" />],
+    [<IcloudIcon size="large" />],
+  ]
+
+  const gearIcons = [
+    [<AppleIcon size="large" />, <LaptopIcon size="large" />],
+    [<AppleIcon size="large" />, <PhoneIcon size="large" />],
+    [<AppleIcon size="large" />, <WatchIcon size="large" />],
+    [<AppleIcon size="large" />, <EarbudsIcon size="large" />],
+    [<AppleIcon size="large" />, <KeyboardIcon size="large" />],
+    [<AppleIcon size="large" />, <MouseIcon size="large" />],
+    [<KeyboardIcon size="large" />, <MouseIcon size="large" />],
+  ]
 
   return (
     <>
@@ -27,9 +66,9 @@ const Experience: NextPage = () => {
       <WhitespaceDivider tight />
       <ToolGrid section="webdev" size={10} />
       <WhitespaceDivider />
-      <ToolGrid section="apps" size={9} />
+      <ToolGrid section="apps" size={9} icons={appsIcons} />
       <WhitespaceDivider />
-      <ToolGrid section="gear" size={7} />
+      <ToolGrid section="gear" size={7} icons={gearIcons} />
       <WhitespaceDivider tight />
     </>
   )

@@ -216,6 +216,30 @@ export const EarbudsIcon = ({
   </svg>
 )
 
+export const KeyboardIcon = ({
+  size = 'small',
+  color = PRIMARY_COLOR,
+}: IconProps) => (
+  <svg viewBox="0 0 24 24" className={iconSizeClassnames[size]}>
+    <path
+      fill={color}
+      d="M4,5A2,2 0 0,0 2,7V17A2,2 0 0,0 4,19H20A2,2 0 0,0 22,17V7A2,2 0 0,0 20,5H4M4,7H20V17H4V7M5,8V10H7V8H5M8,8V10H10V8H8M11,8V10H13V8H11M14,8V10H16V8H14M17,8V10H19V8H17M5,11V13H7V11H5M8,11V13H10V11H8M11,11V13H13V11H11M14,11V13H16V11H14M17,11V13H19V11H17M8,14V16H16V14H8Z"
+    />
+  </svg>
+)
+
+export const MouseIcon = ({
+  size = 'small',
+  color = PRIMARY_COLOR,
+}: IconProps) => (
+  <svg viewBox="0 0 24 24" className={iconSizeClassnames[size]}>
+    <path
+      fill={color}
+      d="M11,1.07C7.05,1.56 4,4.92 4,9H11M4,15A8,8 0 0,0 12,23A8,8 0 0,0 20,15V11H4M13,1.07V9H20C20,4.92 16.94,1.56 13,1.07Z"
+    />
+  </svg>
+)
+
 export const GithubIcon = ({
   size = 'small',
   color = PRIMARY_COLOR,
@@ -236,6 +260,78 @@ export const LinkedinIcon = ({
     <path
       fill={color}
       d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"
+    />
+  </svg>
+)
+
+export const VscIcon = ({
+  size = 'small',
+  color = PRIMARY_COLOR,
+}: IconProps) => (
+  <svg viewBox="0 0 24 24" className={iconSizeClassnames[size]}>
+    <path
+      fill={color}
+      d="M17,16.47V7.39L11,11.93M2.22,9.19C1.92,8.87 1.91,8.37 2.2,8.04L3.4,6.93C3.6,6.75 4.09,6.67 4.45,6.93L7.87,9.54L15.8,2.29C16.12,1.97 16.67,1.84 17.3,2.17L21.3,4.08C21.66,4.29 22,4.62 22,5.23V18.73C22,19.13 21.71,19.56 21.4,19.73L17,21.83C16.68,21.96 16.08,21.84 15.87,21.63L7.85,14.33L4.45,16.93C4.07,17.19 3.6,17.12 3.4,16.93L2.2,15.83C1.88,15.5 1.92,14.96 2.25,14.63L5.25,11.93"
+    />
+  </svg>
+)
+
+export const ChromeIcon = ({
+  size = 'small',
+  color = PRIMARY_COLOR,
+}: IconProps) => (
+  <svg viewBox="0 0 24 24" className={iconSizeClassnames[size]}>
+    <path
+      fill={color}
+      d="M12,20L15.46,14H15.45C15.79,13.4 16,12.73 16,12C16,10.8 15.46,9.73 14.62,9H19.41C19.79,9.93 20,10.94 20,12A8,8 0 0,1 12,20M4,12C4,10.54 4.39,9.18 5.07,8L8.54,14H8.55C9.24,15.19 10.5,16 12,16C12.45,16 12.88,15.91 13.29,15.77L10.89,19.91C7,19.37 4,16.04 4,12M15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9A3,3 0 0,1 15,12M12,4C14.96,4 17.54,5.61 18.92,8H12C10.06,8 8.45,9.38 8.08,11.21L5.7,7.08C7.16,5.21 9.44,4 12,4M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"
+    />
+  </svg>
+)
+
+export const MailIcon = ({
+  size = 'small',
+  color = PRIMARY_COLOR,
+}: IconProps) => (
+  <svg viewBox="0 0 24 24" className={iconSizeClassnames[size]}>
+    <path
+      fill={color}
+      d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"
+    />
+  </svg>
+)
+
+export const TodoIcon = ({
+  size = 'small',
+  color = PRIMARY_COLOR,
+}: IconProps) => (
+  <svg viewBox="0 0 24 24" className={iconSizeClassnames[size]}>
+    <path
+      fill={color}
+      d="M3,5H9V11H3V5M5,7V9H7V7H5M11,7H21V9H11V7M11,15H21V17H11V15M5,20L1.5,16.5L2.91,15.09L5,17.17L9.59,12.59L11,14L5,20Z"
+    />
+  </svg>
+)
+
+export const PencilIcon = ({
+  size = 'small',
+  color = PRIMARY_COLOR,
+}: IconProps) => (
+  <svg viewBox="0 0 24 24" className={iconSizeClassnames[size]}>
+    <path
+      fill={color}
+      d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z"
+    />
+  </svg>
+)
+
+export const IcloudIcon = ({
+  size = 'small',
+  color = PRIMARY_COLOR,
+}: IconProps) => (
+  <svg viewBox="0 0 24 24" className={iconSizeClassnames[size]}>
+    <path
+      fill={color}
+      d="M22,15.04C22,17.23 20.24,19 18.07,19H5.93C3.76,19 2,17.23 2,15.04C2,13.07 3.43,11.44 5.31,11.14C5.28,11 5.27,10.86 5.27,10.71C5.27,9.33 6.38,8.2 7.76,8.2C8.37,8.2 8.94,8.43 9.37,8.8C10.14,7.05 11.13,5.44 13.91,5.44C17.28,5.44 18.87,8.06 18.87,10.83C18.87,10.94 18.87,11.06 18.86,11.17C20.65,11.54 22,13.13 22,15.04Z"
     />
   </svg>
 )

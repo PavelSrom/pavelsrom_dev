@@ -5,9 +5,12 @@ import { useTranslation } from 'lib/translation'
 interface ToolGridProps {
   section: string
   size: number
+  icons?: JSX.Element[][]
 }
 
-export const ToolGrid = ({ section, size }: ToolGridProps) => {
+const removeInvalidLocale = (str: string) => (str.includes('.') ? '' : str)
+
+export const ToolGrid = ({ section, size, icons }: ToolGridProps) => {
   const { t } = useTranslation('tools')
 
   return (
@@ -19,8 +22,12 @@ export const ToolGrid = ({ section, size }: ToolGridProps) => {
         {[...new Array(size).fill(size)].map((_item, index) => (
           <div key={index} className="col-span-12 md:col-span-6 lg:col-span-4">
             <ToolCard
+              icons={icons?.[index] ?? undefined}
               name={t(`${section}.${index}.title`)}
-              description={t(`${section}.${index}.description`)}
+              description={removeInvalidLocale(
+                t(`${section}.${index}.description`)
+              )}
+              caption={removeInvalidLocale(t(`${section}.${index}.caption`))}
             />
           </div>
         ))}
