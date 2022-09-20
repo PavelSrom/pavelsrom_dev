@@ -19,7 +19,7 @@ export const JobListing = ({ abbreviation, logoSrc }: JobListingProps) => {
     <section className="flex flex-col">
       <Container>
         <div className="grid grid-cols-12 gap-8">
-          <div className="col-span-12 lg:col-span-7 order-2 lg:order-1">
+          <div className="col-span-12 lg:col-span-7 order-2 lg:order-1 mt-4 lg:mt-0">
             <Text variant="h1">{t(`${abbreviation}.title`)}</Text>
             <Text variant="sub" className="mt-2">
               {t(`${abbreviation}.company`)}
@@ -50,7 +50,7 @@ export const JobListing = ({ abbreviation, logoSrc }: JobListingProps) => {
             <img
               src={logoSrc}
               alt="Company logo"
-              className="w-full max-w-md h-auto mx-auto block rounded-full"
+              className="w-full max-w-xs lg:max-w-md h-auto mx-auto block rounded-full"
             />
           </div>
         </div>
