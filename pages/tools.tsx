@@ -1,8 +1,9 @@
 import { Landing } from 'components/landing'
 import type { NextPage } from 'next'
-import { Text } from 'ui'
+import { Text, WhitespaceDivider } from 'ui'
 import { useTranslation } from 'lib/translation'
 import { Button } from '@mantine/core'
+import { ToolGrid } from 'components/tools/tool-grid'
 
 const Experience: NextPage = () => {
   const { t } = useTranslation('tools')
@@ -23,6 +24,13 @@ const Experience: NextPage = () => {
           </>
         }
       />
+      <WhitespaceDivider tight />
+      <ToolGrid section="webdev" size={10} />
+      <WhitespaceDivider />
+      <ToolGrid section="apps" size={9} />
+      <WhitespaceDivider />
+      <ToolGrid section="gear" size={7} />
+      <WhitespaceDivider tight />
     </>
   )
 }

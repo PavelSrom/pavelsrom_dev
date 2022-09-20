@@ -2,5 +2,48 @@
 	"landing": {
 		"title": "“What do you work with?”",
 		"description": "Explore the languages, tools and technologies I use!"
+	},
+	"webdev": {
+		"name": "Web Development",
+		"0": {
+			"title": "TypeScript",
+			"description": "I just can't live without it"
+		},
+		"1": {
+			"title": "React",
+			"description": "The most popular front-end library for building interfaces"
+		},
+		"2": {
+			"title": "Next.js",
+			"description": "My go-to front-end framework for most projects"
+		},
+		"3": {
+			"title": "Tailwind CSS",
+			"description": "Supercharging how I add styles to UI elements"
+		},
+		"4": {
+			"title": "Material UI & other",
+			"description": "Popular UI libraries, but my favorite is Mantine"
+		},
+		"5": {
+			"title": "Node.js & Express",
+			"description": "TypeScript on the server, building APIs with ease"
+		},
+		"6": {
+			"title": "PostgreSQL",
+			"description": "The most popular relational database in the world"
+		},
+		"7": {
+			"title": "Prisma",
+			"description": "In my opinion the best type-safe ORM for your database"
+		},
+		"8": {
+			"title": "Docker",
+			"description": "Containerization and microservices made easy"
+		},
+		"9": {
+			"title": "Google Cloud",
+			"description": "When things get really serious"
+		}
 	}
 }

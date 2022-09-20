@@ -3,7 +3,7 @@ import type { NextPage } from 'next'
 import { Text, WhitespaceDivider } from 'ui'
 import { useTranslation } from 'lib/translation'
 import { Button } from '@mantine/core'
-import { JobListing } from 'components/job-listing'
+import { JobListing } from 'components/experience/job-listing'
 
 const Experience: NextPage = () => {
   const { t } = useTranslation('experience')
