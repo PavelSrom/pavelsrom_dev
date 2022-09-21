@@ -45,7 +45,7 @@ export const Header = () => {
             </ButtonLink>
           ))}
         </nav>
-        <Menu transition="pop-top-left">
+        <Menu transition="skew-up" radius="md">
           <Menu.Target>
             <ActionIcon size="lg">
               <Image
