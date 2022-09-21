@@ -1,11 +1,12 @@
 import { Landing } from 'components/landing'
 import type { NextPage } from 'next'
-import { Text, WhitespaceDivider } from 'ui'
+import { Container, Text, WhitespaceDivider } from 'ui'
 import { useTranslation } from 'lib/translation'
 import { Button } from '@mantine/core'
 import { TextWithImage } from 'components/text-with-image'
 import { FeatureGrid, IconItem } from 'components/feature-grid'
 import { BrainIcon, CocktailIcon, DumbbellIcon, LanguageIcon } from 'ui/icons'
+import { Story } from 'components/about/story'
 
 const About: NextPage = () => {
   const { t } = useTranslation('about')
@@ -67,6 +68,8 @@ const About: NextPage = () => {
       />
       <WhitespaceDivider />
       <FeatureGrid title={t('feature_grid.title')} items={gridItems} />
+      <WhitespaceDivider />
+      <Story />
       <WhitespaceDivider tight />
     </>
   )
