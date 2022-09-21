@@ -1,8 +1,7 @@
 import type { NextPage } from 'next'
 import { Landing } from 'components/landing'
-import { Container, Text, WhitespaceDivider } from 'ui'
+import { ButtonLink, Text, WhitespaceDivider } from 'ui'
 import { useTranslation } from 'lib/translation'
-import { Button } from '@mantine/core'
 import { TextWithImage } from 'components/text-with-image'
 import {
   ApplicationBracketsIcon,
@@ -49,9 +48,9 @@ const Home: NextPage = () => {
               {t('landing.title')}
               <span className="text-primary"> {t('landing.highlighted')}</span>
             </Text>
-            <Button size="xl" className="mt-24">
+            <ButtonLink href="/blog" size="xl" className="mt-24">
               Read the blog
-            </Button>
+            </ButtonLink>
           </>
         }
       />
@@ -62,9 +61,9 @@ const Home: NextPage = () => {
         title={t('greeting.title')}
         text={t('greeting.text')}
         cta={
-          <Button size="lg" variant="light" className="mt-20">
+          <ButtonLink href="/tools" size="lg" variant="light" className="mt-20">
             {t('greeting.cta')}
-          </Button>
+          </ButtonLink>
         }
       />
       <WhitespaceDivider />
@@ -77,9 +76,9 @@ const Home: NextPage = () => {
         text={t('fitness.text')}
         textPosition="left"
         cta={
-          <Button size="lg" variant="light" className="mt-20">
+          <ButtonLink href="/about" size="lg" variant="light" className="mt-20">
             {t('fitness.cta')}
-          </Button>
+          </ButtonLink>
         }
       />
       <WhitespaceDivider />
