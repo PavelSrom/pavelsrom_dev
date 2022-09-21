@@ -18,7 +18,7 @@ export const JobListing = ({ abbreviation, logoSrc }: JobListingProps) => {
   return (
     <section className="flex flex-col">
       <Container>
-        <div className="grid grid-cols-12 gap-8">
+        <div className="grid grid-cols-12 gap-y-8">
           <div className="col-span-12 lg:col-span-7 order-2 lg:order-1 mt-4 lg:mt-0">
             <Text variant="h1">{t(`${abbreviation}.title`)}</Text>
             <Text variant="sub" className="mt-2">
