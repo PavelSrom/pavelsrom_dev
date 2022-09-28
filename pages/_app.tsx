@@ -9,8 +9,6 @@ import { Header } from '../components/header'
 export default function App(props: AppProps) {
   const { Component, pageProps } = props
 
-  console.log('pageProps', pageProps)
-
   return (
     <>
       <Head>

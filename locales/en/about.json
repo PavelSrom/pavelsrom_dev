@@ -1,7 +1,8 @@
 {
 	"landing": {
 		"title": "“Who are you, really?”",
-		"description": "Discover my story, passions, and interests"
+		"description": "Discover my story, passions, and interests",
+		"cta": "Read my blog"
 	},
 	"tech": {
 		"title": "The traditional tech-excitement",

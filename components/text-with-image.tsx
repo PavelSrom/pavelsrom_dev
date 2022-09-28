@@ -9,6 +9,7 @@ interface TextWithImage {
   cta?: React.ReactNode
   caption?: string
   textPosition?: 'left' | 'right'
+  id?: string
 }
 
 export const TextWithImage = ({
@@ -19,6 +20,7 @@ export const TextWithImage = ({
   cta,
   caption,
   textPosition = 'right',
+  id,
 }: TextWithImage) => {
   const textHalf = (
     <div
@@ -61,7 +63,7 @@ export const TextWithImage = ({
   )
 
   return (
-    <section className="flex flex-col">
+    <section className="flex flex-col" id={id}>
       <Container className="flex items-center h-full">
         <div className="grid grid-cols-12 lg:gap-16 2xl:gap-24">
           {textHalf}

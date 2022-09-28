@@ -50,7 +50,7 @@
 		"name": "Aplikace a software",
 		"0": {
 			"title": "GitHub",
-			"caption": "správa verzí"
+			"caption": "verzovací systém"
 		},
 		"1": {
 			"title": "Visual Studio Code",

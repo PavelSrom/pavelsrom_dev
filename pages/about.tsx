@@ -1,8 +1,7 @@
 import { Landing } from 'components/landing'
 import type { NextPage } from 'next'
-import { Container, Text, WhitespaceDivider } from 'ui'
+import { ButtonLink, Text, WhitespaceDivider } from 'ui'
 import { useTranslation } from 'lib/translation'
-import { Button } from '@mantine/core'
 import { TextWithImage } from 'components/text-with-image'
 import { FeatureGrid, IconItem } from 'components/feature-grid'
 import { BrainIcon, CocktailIcon, DumbbellIcon, LanguageIcon } from 'ui/icons'
@@ -44,9 +43,9 @@ const About: NextPage = () => {
             <Text variant="sub" className="font-light mt-8">
               {t('landing.description')}
             </Text>
-            <Button size="xl" className="mt-16">
-              Read the blog
-            </Button>
+            <ButtonLink href="/blog" size="xl" className="mt-16">
+              {t('landing.cta')}
+            </ButtonLink>
           </>
         }
       />
@@ -56,6 +55,7 @@ const About: NextPage = () => {
         imageAlt="Me working on my laptop and adjusting my watch"
         title={t('tech.title')}
         text={t('tech.text')}
+        id="tech"
       />
       <WhitespaceDivider />
       <TextWithImage

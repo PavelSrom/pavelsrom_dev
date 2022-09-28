@@ -2,15 +2,18 @@ import { Container } from 'ui/container'
 import { useRouter } from 'next/router'
 import { useTranslation, setLanguage } from 'lib/translation'
 import { ButtonLink, Text } from 'ui'
-import { ActionIcon, Menu, Transition } from '@mantine/core'
+import { ActionIcon, Drawer, Menu } from '@mantine/core'
 import Image from 'next/image'
 import { useState } from 'react'
+import { useDebouncedCallback } from 'use-debounce'
 import { MenuIcon } from 'ui/icons'
 
 export const Header = () => {
   const router = useRouter()
   const { t, lang } = useTranslation('common')
   const [menuOpen, setMenuOpen] = useState(false)
+
+  const reroute = useDebouncedCallback((link: string) => router.push(link), 250)
 
   const languages = [
     {
@@ -51,8 +54,8 @@ export const Header = () => {
           ))}
         </nav>
 
-        <div className="space-x-6 flex items-center">
-          <Menu transition="skew-up" radius="md">
+        <div className="space-x-4 flex items-center">
+          <Menu transition="skew-up" transitionDuration={250} radius="md">
             <Menu.Target>
               <ActionIcon size="lg">
                 <Image
@@ -81,35 +84,45 @@ export const Header = () => {
           </Menu>
 
           <nav className="relative block lg:hidden">
-            <ActionIcon onClick={() => setMenuOpen(prev => !prev)}>
-              <MenuIcon size="large" />
+            <ActionIcon
+              variant="filled"
+              color="blue"
+              onClick={() => setMenuOpen(prev => !prev)}
+            >
+              <MenuIcon size="large" color="#fff" />
             </ActionIcon>
 
-            <Transition mounted={menuOpen} transition="slide-down">
-              {styles => (
-                <div
-                  style={styles}
-                  className="p-8 absolute right-6 shadow-md bg-white z-10"
+            <Drawer
+              opened={menuOpen}
+              onClose={() => setMenuOpen(false)}
+              position="top"
+              overlayColor="#fafafa"
+              overlayOpacity={0.5}
+              overlayBlur={3}
+              transition="skew-up"
+              transitionDuration={250}
+              withCloseButton={false}
+              title={<Text variant="h2">Menu</Text>}
+              padding="xl"
+            >
+              {['blog', 'about', 'experience', 'tools'].map(link => (
+                <ButtonLink
+                  href={`/${link}`}
+                  key={link}
+                  variant={router.pathname === `/${link}` ? 'light' : 'subtle'}
+                  size="xl"
+                  fullWidth
+                  classNames={{ label: 'text-left' }}
+                  // @ts-ignore
+                  onClick={() => {
+                    setMenuOpen(false)
+                    reroute(`/${link}`)
+                  }}
                 >
-                  <Text variant="h2" className="mb-8">
-                    Menu
-                  </Text>
-                  {['blog', 'about', 'experience', 'tools'].map(link => (
-                    <ButtonLink
-                      href={`/${link}`}
-                      key={link}
-                      variant={
-                        router.pathname === `/${link}` ? 'light' : 'subtle'
-                      }
-                      size="lg"
-                      className="mb-4"
-                    >
-                      {t(`navigation.${link}`)}
-                    </ButtonLink>
-                  ))}
-                </div>
-              )}
-            </Transition>
+                  {t(`navigation.${link}`)}
+                </ButtonLink>
+              ))}
+            </Drawer>
           </nav>
         </div>
       </Container>

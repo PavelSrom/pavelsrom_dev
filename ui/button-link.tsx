@@ -2,7 +2,7 @@ import { Button, ButtonProps } from '@mantine/core'
 import Link from 'next/link'
 
 export interface ButtonLinkProps extends ButtonProps {
-  href: `/${string}`
+  href: `${'/' | '#'}${string}`
 }
 
 export const ButtonLink = ({ href, ...buttonProps }: ButtonLinkProps) => (
