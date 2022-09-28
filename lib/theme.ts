@@ -2,6 +2,7 @@ import { MantineThemeOverride } from '@mantine/core'
 
 export const mantineTheme: MantineThemeOverride = {
   colorScheme: 'light',
+  fontFamily: 'Noto Sans, sans-serif',
   breakpoints: {
     // match tailwind breakpoints
     sm: 640,
