@@ -19,7 +19,10 @@ export const FeatureGrid = ({ title, items }: FeatureGridProps) => (
       </Text>
       <div className="grid grid-cols-12 gap-y-8 lg:gap-x-8">
         {items.map(({ icon, title, text }) => (
-          <div className="col-span-12 lg:col-span-6 bg-lightblue p-8 rounded-3xl">
+          <div
+            key={title}
+            className="col-span-12 lg:col-span-6 bg-lightblue p-8 rounded-3xl"
+          >
             {icon}
             <Text variant="h2" className="mt-2">
               {title}

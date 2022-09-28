@@ -1,14 +1,13 @@
 import { Container, Text } from 'ui'
 import { ToolCard } from './tool-card'
 import { useTranslation } from 'lib/translation'
+import { removeInvalidLocale } from 'lib/utils'
 
 interface ToolGridProps {
   section: string
   size: number
   icons?: JSX.Element[][]
 }
-
-const removeInvalidLocale = (str: string) => (str.includes('.') ? '' : str)
 
 export const ToolGrid = ({ section, size, icons }: ToolGridProps) => {
   const { t } = useTranslation('tools')

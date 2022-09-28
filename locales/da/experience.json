@@ -24,12 +24,12 @@
 		"company": "Designers Trust",
 		"period": "marts 2020 - januar 2022",
 		"employment": "deltid",
-		"location": "fjernt fra København, Danmark",
+		"location": "hjemmefra i København, Danmark",
 		"size": "11-50 ansatte",
 		"description": "Mit job hos Designers Trust bestod i at udvikle og vedligeholde en webapplikation fra bunden. Jeg arbejdede udelukkende på frontend-applikationen, der var bygget i React og TypeScript. Takket være mit og min kollegas arbejde er applikationen meget gennemtypet.",
 		"helped": {
 			"0": "opbygge hele applikationen fra bunden til den er forbundet med over 150 endpoints",
-			"1": "sikre fremragende typesikkerhed ved at sikre over 99 % typedækning",
+			"1": "sikre fremragende typesikkerhed ved at sikre over 99% typedækning",
 			"2": "udføre mange refaktoreringer, f.eks. fra JavaScript til TypeScript",
 			"3": "opbygge brugergrænseflader i overensstemmelse med stilguiden"
 		}
