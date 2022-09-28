@@ -1,7 +1,8 @@
 {
 	"landing": {
 		"title": "“Kdo jsi, ale doopravdy?”",
-		"description": "Seznam se s mým příběhem, vášněmi a zájmy"
+		"description": "Seznam se s mým příběhem, vášněmi a zájmy",
+		"cta": "Přečti si můj blog"
 	},
 	"tech": {
 		"title": "Tradiční nadšení pro ‘tech’",

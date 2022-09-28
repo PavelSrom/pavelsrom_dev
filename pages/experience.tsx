@@ -19,7 +19,7 @@ const Experience: NextPage = () => {
               {t('landing.description')}
             </Text>
             <Button size="xl" className="mt-16">
-              Read the blog
+              {t('landing.cta')}
             </Button>
           </>
         }

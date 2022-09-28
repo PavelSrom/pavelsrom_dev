@@ -1,7 +1,8 @@
 {
 	"landing": {
 		"title": "“Hvem er du egentlig?”",
-		"description": "Opdag min historie, passioner og interesser"
+		"description": "Opdag min historie, passioner og interesser",
+		"cta": "Læs min blog"
 	},
 	"tech": {
 		"title": "Den traditionelle tech-begejstring",

@@ -20,6 +20,9 @@ module.exports = {
         dark3: '#5C5F66',
         gray9: '#212529',
       },
+      fontFamily: {
+        noto: ['Noto Sans', 'sans-serif'],
+      },
     },
   },
   plugins: [],
