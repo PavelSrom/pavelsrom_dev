@@ -12,7 +12,7 @@ export const Story = () => {
           <div className="col-span-12 lg:col-span-6 order-2 lg:order-1">
             <Accordion variant="contained" radius={8}>
               {[...new Array(4).fill(4)].map((_, index) => (
-                <Accordion.Item value={index.toString()}>
+                <Accordion.Item key={index} value={index.toString()}>
                   <Accordion.Control>
                     <Text variant="sub">{t(`story.${index}.title`)}</Text>
                   </Accordion.Control>
