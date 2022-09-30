@@ -6,6 +6,7 @@ import { TextWithImage } from 'components/text-with-image'
 import { FeatureGrid, IconItem } from 'components/feature-grid'
 import { BrainIcon, CocktailIcon, DumbbellIcon, LanguageIcon } from 'ui/icons'
 import { Story } from 'components/about/story'
+import { Seo } from 'components/seo'
 
 const About: NextPage = () => {
   const { t } = useTranslation('about')
@@ -35,6 +36,7 @@ const About: NextPage = () => {
 
   return (
     <>
+      <Seo page="about" />
       <Landing
         illustration="personal_info"
         textContent={

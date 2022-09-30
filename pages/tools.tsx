@@ -21,6 +21,7 @@ import {
   VscIcon,
   WatchIcon,
 } from 'ui/icons'
+import { Seo } from 'components/seo'
 
 const Experience: NextPage = () => {
   const { t } = useTranslation('tools')
@@ -49,6 +50,7 @@ const Experience: NextPage = () => {
 
   return (
     <>
+      <Seo page="tools" />
       <Landing
         illustration="static_website"
         textContent={

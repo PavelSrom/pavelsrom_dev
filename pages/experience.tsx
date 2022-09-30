@@ -4,12 +4,14 @@ import { Text, WhitespaceDivider } from 'ui'
 import { useTranslation } from 'lib/translation'
 import { Button } from '@mantine/core'
 import { JobListing } from 'components/experience/job-listing'
+import { Seo } from 'components/seo'
 
 const Experience: NextPage = () => {
   const { t } = useTranslation('experience')
 
   return (
     <>
+      <Seo page="experience" />
       <Landing
         illustration="feeling_proud"
         textContent={

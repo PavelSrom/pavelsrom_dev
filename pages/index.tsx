@@ -11,6 +11,7 @@ import {
 } from 'ui/icons'
 import { FeatureGrid, IconItem } from 'components/feature-grid'
 import { ContactForm } from 'components/home/contact-form'
+import { Seo } from 'components/seo'
 
 const Home: NextPage = () => {
   const { t } = useTranslation('home')
@@ -40,6 +41,7 @@ const Home: NextPage = () => {
 
   return (
     <>
+      <Seo page="home" />
       <Landing
         illustration="web_devices"
         textContent={

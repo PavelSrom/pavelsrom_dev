@@ -1,9 +1,18 @@
 {
-	"hello": "Hello!",
-	"navigation": {
-		"blog": "Blog",
-		"about": "About",
-		"experience": "Experience",
-		"tools": "Tools"
-	}
+  "hello": "Hello!",
+  "navigation": {
+		"home": "Home",
+    "blog": "Blog",
+    "about": "About",
+    "experience": "Experience",
+    "tools": "Tools"
+  },
+  "seo": {
+		"keywords": "Software Development, Web Development, JavaScript, TypeScript, React, Next.js, Node, Pavel Srom",
+    "home": "Home page description",
+    "blog": "Blog page description",
+		"about": "About page description",
+		"experience": "Experience page description",
+		"tools": "Tools page description"
+  }
 }
