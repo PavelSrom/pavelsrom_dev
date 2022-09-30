@@ -39,6 +39,16 @@
 			"email": "Email",
 			"message": "Copak máš na srdci?"
 		},
-		"cta": "Napiš mi"
+		"cta": "Napiš mi",
+		"snackbar": {
+			"success": {
+				"title": "Pojďme slavit!",
+				"text": "Tvoje zpráva byla odeslána."
+			},
+			"error": {
+				"title": "Jejda!",
+				"text": "Něco se pokazilo. Zkus to znovu později."
+			}
+		}
 	}
 }

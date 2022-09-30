@@ -1,6 +1,7 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { MantineProvider } from '@mantine/core'
+import { NotificationsProvider } from '@mantine/notifications'
 import '../styles/globals.css'
 import { mantineTheme } from '../lib/theme'
 import { Footer } from '../components/footer'
@@ -24,9 +25,11 @@ export default function App(props: AppProps) {
         withNormalizeCSS
         theme={mantineTheme}
       >
-        <Header />
-        <Component {...pageProps} />
-        <Footer />
+        <NotificationsProvider>
+          <Header />
+          <Component {...pageProps} />
+          <Footer />
+        </NotificationsProvider>
       </MantineProvider>
     </>
   )

@@ -39,6 +39,16 @@
 			"email": "Email",
 			"message": "What's on your mind?"
 		},
-		"cta": "Message me"
+		"cta": "Message me",
+		"snackbar": {
+			"success": {
+				"title": "Let's celebrate!",
+				"text": "Your message has been sent."
+			},
+			"error": {
+				"title": "Oops!",
+				"text": "Something went wrong. Please try again later."
+			}
+		}
 	}
 }

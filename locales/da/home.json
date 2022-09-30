@@ -39,6 +39,16 @@
 			"email": "Email",
 			"message": "Hvad har du på hjerte?"
 		},
-		"cta": "Besked mig"
+		"cta": "Besked mig",
+		"snackbar": {
+			"success": {
+				"title": "Lad os fejre!",
+				"text": "Din besked er blevet sendt."
+			},
+			"error": {
+				"title": "Ups!",
+				"text": "Noget gik galt. Prøv venligst igen senere."
+			}
+		}
 	}
 }
