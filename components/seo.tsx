@@ -13,7 +13,7 @@ export const Seo = ({ page }: SeoProps) => {
       <title>{t(`navigation.${page}`)} | Pavel Srom</title>
       <meta name="description" content={t(`seo.${page}`)} />
       <meta name="keywords" content={t(`seo.keywords`)} />
-      <meta property="og:url" content="https://example.com" />
+      <meta property="og:url" content="https://pavelsrom.dev" />
       <meta property="og:title" content={t(`navigation.${page}`)} />
       <meta property="og:description" content={t(`seo.${page}`)} />
     </Head>
