@@ -1,7 +1,11 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { MantineProvider } from '@mantine/core'
+import { NotificationsProvider } from '@mantine/notifications'
 import '../styles/globals.css'
+import { mantineTheme } from '../lib/theme'
+import { Footer } from '../components/footer'
+import { Header } from '../components/header'
 
 export default function App(props: AppProps) {
   const { Component, pageProps } = props
@@ -19,12 +23,13 @@ export default function App(props: AppProps) {
       <MantineProvider
         // withGlobalStyles
         withNormalizeCSS
-        theme={{
-          /** Put your mantine theme override here */
-          colorScheme: 'light',
-        }}
+        theme={mantineTheme}
       >
-        <Component {...pageProps} />
+        <NotificationsProvider>
+          <Header />
+          <Component {...pageProps} />
+          <Footer />
+        </NotificationsProvider>
       </MantineProvider>
     </>
   )

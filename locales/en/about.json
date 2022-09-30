@@ -1,0 +1,67 @@
+{
+	"landing": {
+		"title": "“Who are you, really?”",
+		"description": "Discover my story, passions, and interests",
+		"cta": "Read my blog"
+	},
+	"tech": {
+		"title": "The traditional tech-excitement",
+		"text": "Just like for many other programmers, tech is very close to me. I keep myself updated about the latest innovations within the web, watch every single Apple Keynote, and hope we will have self-driving cars worldwide within 5 years."
+	},
+	"travel": {
+		"title": "A curious explorer",
+		"text": "Every new place I go to has its uniqueness that I would like to discover. It’s a great way to get me out of my comfort zone and make memories that will last for a lifetime.",
+		"caption": "Me on a trip to Preikestolen, Norway"
+	},
+	"feature_grid": {
+		"title": "Wait, that's not all!",
+		"0": {
+			"title": "Fitness and running",
+			"text": "I take my health seriously and even though I’ve played many different sports in my life, in recent years I’ve stuck to a combination of weighted calisthenics and weights. As a little cardio addition, I usually go for a run about twice a week."
+		},
+		"1": {
+			"title": "Psychology and mental health",
+			"text": "Mental health is just as important as physical health. Understanding how my thought patterns work and practicing various relaxation routines allow me to keep my stress at bay and make sure can I work clear-headed without any negative influences."
+		},
+		"2": {
+			"title": "Bartender and barista",
+			"text": "Who would have thought that I really enjoy working behind the bar? Whether it’s through making cappuccinos, ice lattes, gin and tonics or just chatting with customers, being a barista and a bartender taught me many things that I draw from until this day."
+		},
+		"3": {
+			"title": "Language learning",
+			"text": "I’ve said it many times, and I will say it again - learning English to an advanced level has been the best decision of my life, and to follow its footsteps, I’ve been working on my Danish just as hard. Let’s hope that one day I’ll say 'rødgrød med fløde' without accent!"
+		}
+	},
+	"story": {
+		"title": "So you want to know everything?",
+		"text": "Okay, then. May your wish come true!",
+		"0": {
+			"title": "Before high school",
+			"paragraphs": {
+				"0": "I was raised in a small town called Hradec nad Moravici, Czechia. In my early years at school, I was the typical bright kid - never had to learn anything to get excellent grades. Unfortunately, that also lead to a few years of bullying. I later switched schools and got surrounded by friendlier classmates. Right around that time, my love for computer games was also gaining traction.",
+				"1": ""
+			}
+		},
+		"1": {
+			"title": "High school",
+			"paragraphs": {
+				"0": "Through my early high school years, I was gaming quite a lot, playing mostly competitive multiplayer games. It was my way to relax after a day at school. During the summer of 2016, I got madly in love with cycling and travelled over 2000km in just two months. I still vividly remember the good vibes all the cycling brought me.",
+				"1": "Towards the end of high school, I realized that I would actually prefer to study abroad rather than in my home country, which is why, towards the end of 2016, I started taking English seriously and started learning it on my own. About a year later, I passed the CAE certificate, and the day when I got the results has been the best day of my life. A few months after that, I managed to pass my high school finals and get offered a study place in Aalborg, Denmark."
+			}
+		},
+		"2": {
+			"title": "Denmark",
+			"paragraphs": {
+				"0": "I started learning web development from scratch in early September 2018. A few days later, I discovered a website called FreeCodeCamp, a non-profit organization teaching people how to code. As soon as I had gone through a few sections of HTML tutorials, I was hooked and began my journey towards becoming a web developer.",
+				"1": "After I had moved to Copenhagen, I joined Frederiksberg Toastmasters which is a public speaking community. I also began volunteering behind the bar at Studenterhuset, and it was a mesmerizing experience through the few months of my being there. Moving to Copenhagen was a very good decision, mostly for the opportunities that the city presents. I’ve met many new people, some of which have stayed my friends, and it’s a beautiful city with tons to offer."
+			}
+		},
+		"3": {
+			"title": "What comes next",
+			"paragraphs": {
+				"0": "I wish I had a crystal ball, but since I don’t, it’s very difficult to tell what’s going to happen in the coming years. There’s many different options that I can choose - moving to another country, taking some time off to travel, dedicating more time to pursuing my hobbies, and so on. I definitely have a few ideas worth spending time on in mind, but only time will tell which of them will come to fruition. If I should be more specific, however, I would say that I’m going to explore the world of web development further, a lot further, and perhaps transition into another branch of programming such as artificial intelligence.",
+				"1": "As for personal interests, one non-negotiable on the list is definitely learning Danish to an advanced level. I’ve spent so many years in Denmark and the country has simply become so ingrained in me at this point, that I would like to learn the language to the fullest. It won’t be an easy task by any means, but as many others have proved, it can be done."
+			}
+		}
+	}
+}

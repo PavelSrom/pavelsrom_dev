@@ -1,0 +1,9 @@
+{
+	"hello": "Ahoj!",
+	"navigation": {
+		"blog": "Blog",
+		"about": "O mně",
+		"experience": "Zkušenosti",
+		"tools": "Nástroje"
+	}
+}

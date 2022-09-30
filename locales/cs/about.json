@@ -1,0 +1,67 @@
+{
+	"landing": {
+		"title": "“Kdo jsi, ale doopravdy?”",
+		"description": "Seznam se s mým příběhem, vášněmi a zájmy",
+		"cta": "Přečti si můj blog"
+	},
+	"tech": {
+		"title": "Tradiční nadšení pro ‘tech’",
+		"text": "Stejně jako pro mnoho jiných programátorů je mi tech velmi blízká. Sleduju nejnovější inovace v oblasti vývoje webu, každou keynote společnosti Apple a doufám, že do pěti let budeme mít na světě samořídící auta."
+	},
+	"travel": {
+		"title": "Zvídavý průzkumník",
+		"text": "Každé nové místo, kam se vydám, má svou jedinečnost, kterou bych rád objevil. Je to skvělý způsob, jak vystoupit z komfortní zóny a vytvořit si vzpomínky, které zůstanou na celý život.",
+		"caption": "Já na výletě na Preikestolen, Norsko"
+	},
+	"feature_grid": {
+		"title": "Počkat, to není všechno!",
+		"0": {
+			"title": "Fitness a běhání",
+			"text": "Své zdraví beru vážně, a přestože jsem v životě provozoval mnoho různých sportů, v posledních letech jsem zůstal u kombinace kalisteniky s činkami. Jako malý kardio doplněk si chodím zhruba dvakrát týdně zaběhat."
+		},
+		"1": {
+			"title": "Psychologie a duševní zdraví",
+			"text": "Duševní zdraví je stejně důležité jako to fyzické. Pochopení, jak fungují mé myšlenkové vzorce, a praktikování různých relaxačních technik mi umožňuje udržet stres na uzdě a zajistit, že můžu pracovat s čistou hlavou bez jakýchkoli negativních vlivů."
+		},
+		"2": {
+			"title": "Barman a barista",
+			"text": "Kdo by to byl řekl, že mě práce za barem opravdu baví? Ať už jde o přípravu cappuccina, ledového latté, ginu s tonikem nebo jen o povídání si se zákazníky, práce baristy a barmana mě naučila spoustu věcí, ze kterých čerpám dodnes."
+		},
+		"3": {
+			"title": "Učení se jazykům",
+			"text": "Řekl jsem to už mockrát a řeknu to znovu - naučit se anglicky na pokročilou úroveň bylo nejlepší rozhodnutí mého života, a abych šel v jeho stopách, pracuju stejně tvrdě i na své dánštině. Doufejme, že jednoho dne řeknu 'rødgrød med fløde' bez přízvuku!"
+		}
+	},
+	"story": {
+		"title": "Takže ty chceš vědět všechno?",
+		"text": "Tak fajn. Ať se ti přání splní!",
+		"0": {
+			"title": "Před střední školou",
+			"paragraphs": {
+				"0": "Vyrostl jsem v malém městě jménem Hradec nad Moravicí, v česku. V prvních letech školní docházky jsem byl typické chytré dítě - nikdy jsem se nemusel nic učit, abych měl výborné známky. Bohužel to vedlo i k tomu, že jsem několik let zažíval šikanu. Později jsem změnil školu a obklopili mě přátelštější spolužáci. Přesně v té době se také začala prohlubovat moje láska k počítačovým hrám.",
+				"1": ""
+			}
+		},
+		"1": {
+			"title": "Střední škola",
+			"paragraphs": {
+				"0": "Na začátku střední školy jsem hodně hrál hry, většinou kompetitivní hry pro více hráčů. Byl to můj způsob, jak se odreagovat po dni stráveném ve škole. V létě 2016 jsem se zamiloval do cyklistiky a za pouhé dva měsíce jsem ujel přes 2000km. Pořád si živě pamatuju na tu dobrou náladu, kterou mi celá ta jízda na kole přinášela.",
+				"1": "Ke konci střední školy jsem si uvědomil, že bych vlastně raději studoval v zahraničí než ve své vlastní zemi, a proto jsem se koncem roku 2016 obul do angličtiny a začal se ji učit jako samouk. Zhruba o rok později jsem složil certifikát CAE a den, kdy jsem dostal výsledky, byl dodnes nejlepším dnem mého života. Několik měsíců poté se mi podařilo složit maturitu a dostat nabídku studovat v dánském Aalborgu."
+			}
+		},
+		"2": {
+			"title": "Dánsko",
+			"paragraphs": {
+				"0": "Začátkem září 2018 jsem se začal učit vývoj webových stránek úplně od píky. O pár dní později jsem objevil stránku FreeCodeCamp, neziskovou organizaci, která učí lidi programovat. Jakmile jsem prošel několik sekcí výukových kurzů HTML, byl jsem posedlý a začal jsem svou cestu k tomu, abych se stal webovým vývojářem.",
+				"1": "Po přestěhování do Kodaně jsem se přidal k Frederiksberg Toastmasters, což je řečnická komunita. Začal jsem taky pracovat jako dobrovolník za barem ve Studenterhuset a během těch několika měsíců, co jsem tam byl, to pro mě byla fascinující zkušenost. Přestěhovat se do Kodaně bylo velmi dobré rozhodnutí, hlavně kvůli příležitostem, které město nabízí. Poznal jsem mnoho nových lidí, z nichž někteří zůstali mými přáteli, a je to krásné město, které má co nabídnout."
+			}
+		},
+		"3": {
+			"title": "Co přijde příště",
+			"paragraphs": {
+				"0": "Moc bych si přál mít křišťálovou kouli, ale protože ji nemám, je dost těžké říct, co se stane v příštích letech. Je mnoho různých možností, které si můžu vybrat - přestěhovat se do jiné země, vzít si volno a cestovat, víc se věnovat svým koníčkům a tak dále. Rozhodně mám v hlavě několik nápadů, kterým stojí za to věnovat čas, ale jen čas ukáže, které z nich se uskuteční. Kdybych to měl ale trochu konkretizovat, řekl bych, že se chystám dál, mnohem dál, prozkoumávat svět webového vývoje a možná přejít do jiného odvětví programování, například do práce s umělou inteligencí.",
+				"1": "Co se osobních zájmů týče, na seznamu je určitě studium dánštiny na pokročilé úrovni. Strávil jsem v Dánsku tolik let a tato země ve mně v tomto bodě prostě natolik zakořenila, že bych se ten jazyk chtěl naučit pořádně. Nebude to v žádném případě lehký úkol, ale jak dokázali mnozí jiní, dá se to zvládnout."
+			}
+		}
+	}
+}

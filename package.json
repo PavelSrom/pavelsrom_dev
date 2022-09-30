@@ -14,12 +14,20 @@
     "@mantine/core": "^5.3.3",
     "@mantine/hooks": "^5.3.3",
     "@mantine/next": "^5.3.3",
+    "@mantine/notifications": "^5.4.2",
+    "axios": "^0.27.2",
+    "clsx": "^1.2.1",
+    "framer-motion": "^7.5.0",
     "next": "12.3.0",
+    "next-translate": "^1.5.0",
+    "nodemailer": "^6.8.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "use-debounce": "^8.0.4"
   },
   "devDependencies": {
     "@types/node": "18.7.18",
+    "@types/nodemailer": "^6.4.6",
     "@types/react": "18.0.20",
     "@types/react-dom": "18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.0.0",

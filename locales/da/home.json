@@ -1,0 +1,54 @@
+{
+	"landing": {
+		"title": "Det moderne web med slutbrugerne i tankerne.",
+		"highlighted": "Altid."
+	},
+	"greeting": {
+		"title": "Hej med dig!",
+		"text": "Jeg hedder Pavel og er webudvikler og bor i øjeblikket i København, Danmark. Jeg hjælper folk og virksomheder med at opbygge deres projekter ved at udnytte web'ets fulde potentiale.",
+		"cta": "Se hvad jeg arbejder med"
+	},
+	"feature_grid": {
+		"title": "Hvordan kan jeg hjælpe dig?",
+		"0": {
+			"title": "Brugergrænseflader i stor skala",
+			"text": "Jeg elsker at skabe brugergrænseflader, der er til glæde for øjet og føles hurtige. De er næsten som mit andet hjem! Jeg kan godt lide at bygge dem på lang sigt ved at være ekstra opmærksom på typesikkerhed, kodekvalitet og læsbarhed."
+		},
+		"1": {
+			"title": "Tager sig af det hele",
+			"text": "Brugergrænsefladen er ikke mit eneste område - jeg kan også navigere rundt på serveren! Gennem mine personlige projekter og professionelle stillinger har jeg også arbejdet med databaser, REST API'er og cloud."
+		},
+		"2": {
+			"title": "Undervisning og ledelse",
+			"text": "Jeg har haft det privilegium at uddanne mine kolleger i emner, som jeg brænder for, f.eks. TypeScript. Udover det har jeg også indtaget nogle ledende stillinger, især i universitets- og eksamensprojekter."
+		},
+		"3": {
+			"title": "Det store perspektiv",
+			"text": "Detaljer er vigtige, men nogle gange er det nødvendigt at zoome lidt ud. Ud fra min egen erfaring kan det spare masser af tid, nerver og kaffe, hvis man tager initiativ til at sige noget eller har modet til at bytte et værktøj ud med et andet."
+		}
+	},
+	"fitness": {
+		"title": "Fitness i hjertet",
+		"text": "Det er rigtigt. Jeg har dyrket sport stort set hele mit liv, men nu om dage træner jeg mest vægtet calisthenics, vægte og løb.",
+		"cta": "Få mere at vide om mig"
+	},
+	"contact": {
+		"title": "Lad os skabe noget stort",
+		"text": "Noget der fangede din opmærksomhed? Send en besked, og lad os finde ud af, hvordan vi kan arbejde sammen!",
+		"placeholders": {
+			"email": "Email",
+			"message": "Hvad har du på hjerte?"
+		},
+		"cta": "Besked mig",
+		"snackbar": {
+			"success": {
+				"title": "Lad os fejre!",
+				"text": "Din besked er blevet sendt."
+			},
+			"error": {
+				"title": "Ups!",
+				"text": "Noget gik galt. Prøv venligst igen senere."
+			}
+		}
+	}
+}

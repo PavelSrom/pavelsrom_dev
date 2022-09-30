@@ -1,0 +1,112 @@
+{
+	"landing": {
+		"title": "“What do you work with?”",
+		"description": "Explore the languages, tools and technologies I use!"
+	},
+	"webdev": {
+		"name": "Web development",
+		"0": {
+			"title": "TypeScript",
+			"description": "I just can't live without it, static types are something amazing"
+		},
+		"1": {
+			"title": "React",
+			"description": "The most popular front-end library for building interfaces"
+		},
+		"2": {
+			"title": "Next.js",
+			"description": "My go-to front-end framework for most projects"
+		},
+		"3": {
+			"title": "Tailwind CSS",
+			"description": "Supercharging how I add styles to UI elements"
+		},
+		"4": {
+			"title": "Material UI & other",
+			"description": "Popular UI libraries, but my favorite is Mantine"
+		},
+		"5": {
+			"title": "Node.js & Express",
+			"description": "TypeScript on the server, building APIs with ease"
+		},
+		"6": {
+			"title": "PostgreSQL",
+			"description": "The most popular relational database in the world"
+		},
+		"7": {
+			"title": "Prisma",
+			"description": "In my opinion the best type-safe ORM for your database"
+		},
+		"8": {
+			"title": "Docker",
+			"description": "Containerization and microservices made easy"
+		},
+		"9": {
+			"title": "Google Cloud",
+			"description": "When things get really serious"
+		}
+	},
+	"apps": {
+		"name": "Apps and software",
+		"0": {
+			"title": "GitHub",
+			"caption": "version control"
+		},
+		"1": {
+			"title": "Visual Studio Code",
+			"caption": "code editor"
+		},
+		"2": {
+			"title": "GitHub Copilot",
+			"caption": "code completion"
+		},
+		"3": {
+			"title": "Google Chrome",
+			"caption": "web browser"
+		},
+		"4": {
+			"title": "Google Calendar",
+			"caption": "calendar"
+		},
+		"5": {
+			"title": "Gmail",
+			"caption": "email"
+		},
+		"6": {
+			"title": "Todoist",
+			"caption": "task manager"
+		},
+		"7": {
+			"title": "Notion",
+			"caption": "note taking"
+		},
+		"8": {
+			"title": "iCloud",
+			"caption": "file storage"
+		}
+	},
+	"gear": {
+		"name": "Everyday gear",
+		"0": {
+			"title": "MacBook Pro 14\""
+		},
+		"1": {
+			"title": "iPhone 13"
+		},
+		"2": {
+			"title": "Apple Watch SE"
+		},
+		"3": {
+			"title": "AirPods 2019"
+		},
+		"4": {
+			"title": "Magic Keyboard"
+		},
+		"5": {
+			"title": "Magic Trackpad"
+		},
+		"6": {
+			"title": "Logitech K470"
+		}
+	}
+}

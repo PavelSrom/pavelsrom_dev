@@ -1,0 +1,112 @@
+{
+	"landing": {
+		"title": "“S čím pracuješ?”",
+		"description": "Projdi si jazyky, nástroje a technologie, které používám!"
+	},
+	"webdev": {
+		"name": "Programování webu",
+		"0": {
+			"title": "TypeScript",
+			"description": "Bez něj se prostě neobejdu, statické typy jsou něco úžasného"
+		},
+		"1": {
+			"title": "React",
+			"description": "Nejpopulárnější frontendová knihovna pro vytváření rozhraní"
+		},
+		"2": {
+			"title": "Next.js",
+			"description": "Můj výběr front-end frameworku pro většinu projektů"
+		},
+		"3": {
+			"title": "Tailwind CSS",
+			"description": "Vylepšený způsob přidávání stylů do uživatelského rozhraní"
+		},
+		"4": {
+			"title": "Material UI & jiné",
+			"description": "Populární UI knihovny, ale moje nejoblíbenější je Mantine"
+		},
+		"5": {
+			"title": "Node.js & Express",
+			"description": "TypeScript na serveru, snadné vytváření rozhraní API"
+		},
+		"6": {
+			"title": "PostgreSQL",
+			"description": "Nejoblíbenější relační databáze na světě"
+		},
+		"7": {
+			"title": "Prisma",
+			"description": "Podle mě nejlepší typově bezpečný ORM pro vaši databázi"
+		},
+		"8": {
+			"title": "Docker",
+			"description": "Snadná kontejnerizace a mikroservisy"
+		},
+		"9": {
+			"title": "Google Cloud",
+			"description": "Když jde do tuhého"
+		}
+	},
+	"apps": {
+		"name": "Aplikace a software",
+		"0": {
+			"title": "GitHub",
+			"caption": "verzovací systém"
+		},
+		"1": {
+			"title": "Visual Studio Code",
+			"caption": "editor kódu"
+		},
+		"2": {
+			"title": "GitHub Copilot",
+			"caption": "dokončování kódu"
+		},
+		"3": {
+			"title": "Google Chrome",
+			"caption": "prohlížeč"
+		},
+		"4": {
+			"title": "Google Calendar",
+			"caption": "kalendář"
+		},
+		"5": {
+			"title": "Gmail",
+			"caption": "email"
+		},
+		"6": {
+			"title": "Todoist",
+			"caption": "úkolníček"
+		},
+		"7": {
+			"title": "Notion",
+			"caption": "psaní poznámek"
+		},
+		"8": {
+			"title": "iCloud",
+			"caption": "úložiště souborů"
+		}
+	},
+	"gear": {
+		"name": "Každodenní výbava",
+		"0": {
+			"title": "MacBook Pro 14\""
+		},
+		"1": {
+			"title": "iPhone 13"
+		},
+		"2": {
+			"title": "Apple Watch SE"
+		},
+		"3": {
+			"title": "AirPods 2019"
+		},
+		"4": {
+			"title": "Magic Keyboard"
+		},
+		"5": {
+			"title": "Magic Trackpad"
+		},
+		"6": {
+			"title": "Logitech K470"
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"hello": "Hej!",
+	"navigation": {
+		"blog": "Blog",
+		"about": "Om mig",
+		"experience": "Erfaring",
+		"tools": "Værktøjer"
+	}
+}

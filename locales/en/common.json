@@ -1,0 +1,9 @@
+{
+	"hello": "Hello!",
+	"navigation": {
+		"blog": "Blog",
+		"about": "About",
+		"experience": "Experience",
+		"tools": "Tools"
+	}
+}
