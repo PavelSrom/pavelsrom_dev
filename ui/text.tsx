@@ -20,6 +20,15 @@ const classnames: Record<TextVariant, string> = {
   leading: 'text-4xl md:text-5xl xl:text-6xl font-bold font-noto',
 }
 
+const textColors: Record<TextVariant, string> = {
+  h1: 'text-gray9',
+  h2: 'text-gray9',
+  sub: 'text-dark3',
+  body: 'text-dark3',
+  caption: 'text-dark3',
+  leading: 'text-gray9',
+}
+
 export interface TextProps {
   children: React.ReactNode | React.ReactNode[]
   variant?: TextVariant
@@ -36,6 +45,7 @@ export const Text = ({
   return (
     <Element
       className={clsx(classnames[variant], {
+        [textColors[variant]]: !className.includes('text-'),
         [className!]: !!className,
       })}
     >

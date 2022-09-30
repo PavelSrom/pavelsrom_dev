@@ -30,7 +30,9 @@ export const Footer = () => {
             {['blog', 'about', 'experience', 'tools'].map(link => (
               <Link href={`/${link}`} key={link}>
                 <a className="text-white no-underline">
-                  <Text key={link}>{t(`navigation.${link}`)}</Text>
+                  <Text key={link} className="text-white">
+                    {t(`navigation.${link}`)}
+                  </Text>
                 </a>
               </Link>
             ))}
@@ -38,7 +40,7 @@ export const Footer = () => {
         </div>
 
         <div className="mt-12">
-          <Text variant="caption">
+          <Text variant="caption" className="text-white">
             Country flags provided by{' '}
             <span>
               <a
@@ -51,7 +53,7 @@ export const Footer = () => {
               </a>
             </span>
           </Text>
-          <Text variant="caption" className="mt-4">
+          <Text variant="caption" className="text-white mt-4">
             Pavel Srom 2022
           </Text>
         </div>
