@@ -1,5 +1,6 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
+import Script from 'next/script'
 import { MantineProvider } from '@mantine/core'
 import { NotificationsProvider } from '@mantine/notifications'
 import '../styles/globals.css'
@@ -39,6 +40,19 @@ export default function App(props: AppProps) {
           <Footer />
         </NotificationsProvider>
       </MantineProvider>
+
+      <Script
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+					<script 
+						src="https://cdn.counter.dev/script.js"
+						data-id="1d10a130-fe53-4bcf-aab7-c08d262eac2f"
+						data-utcoffset="2"
+					></script>
+				`,
+        }}
+      />
     </>
   )
 }
