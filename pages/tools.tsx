@@ -1,6 +1,6 @@
 import { Landing } from 'components/landing'
 import type { NextPage } from 'next'
-import { Text, WhitespaceDivider } from 'ui'
+import { ButtonLink, Text, WhitespaceDivider } from 'ui'
 import { useTranslation } from 'lib/translation'
 import { Button } from '@mantine/core'
 import { ToolGrid } from 'components/tools/tool-grid'
@@ -21,6 +21,7 @@ import {
   VscIcon,
   WatchIcon,
 } from 'ui/icons'
+import { Seo } from 'components/seo'
 
 const Experience: NextPage = () => {
   const { t } = useTranslation('tools')
@@ -49,6 +50,7 @@ const Experience: NextPage = () => {
 
   return (
     <>
+      <Seo page="tools" />
       <Landing
         illustration="static_website"
         textContent={
@@ -57,14 +59,14 @@ const Experience: NextPage = () => {
             <Text variant="sub" className="font-light mt-8">
               {t('landing.description')}
             </Text>
-            <Button size="xl" className="mt-16">
-              Read the blog
-            </Button>
+            <ButtonLink href="#web-development" size="xl" className="mt-16">
+              {t('landing.cta')}
+            </ButtonLink>
           </>
         }
       />
       <WhitespaceDivider tight />
-      <ToolGrid section="webdev" size={10} />
+      <ToolGrid section="webdev" size={10} id="web-development" />
       <WhitespaceDivider />
       <ToolGrid section="apps" size={9} icons={appsIcons} />
       <WhitespaceDivider />

@@ -11,6 +11,7 @@ import {
 } from 'ui/icons'
 import { FeatureGrid, IconItem } from 'components/feature-grid'
 import { ContactForm } from 'components/home/contact-form'
+import { Seo } from 'components/seo'
 
 const Home: NextPage = () => {
   const { t } = useTranslation('home')
@@ -40,6 +41,7 @@ const Home: NextPage = () => {
 
   return (
     <>
+      <Seo page="home" />
       <Landing
         illustration="web_devices"
         textContent={
@@ -48,8 +50,8 @@ const Home: NextPage = () => {
               {t('landing.title')}
               <span className="text-primary"> {t('landing.highlighted')}</span>
             </Text>
-            <ButtonLink href="/blog" size="xl" className="mt-24">
-              Read the blog
+            <ButtonLink href="/experience" size="xl" className="mt-24">
+              {t('landing.ctaTemp')}
             </ButtonLink>
           </>
         }

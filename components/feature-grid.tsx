@@ -1,20 +1,6 @@
-import { motion, Variants } from 'framer-motion'
+import { motion } from 'framer-motion'
+import { popVariants } from 'lib/animation-variants'
 import { Container, Text } from 'ui'
-
-const variants: Variants = {
-  hidden: {
-    scale: 0,
-    y: 256,
-  },
-  visible: {
-    scale: 1,
-    y: 0,
-    transition: {
-      type: 'spring',
-      duration: 0.5,
-    },
-  },
-}
 
 export interface IconItem {
   icon: JSX.Element
@@ -34,13 +20,13 @@ export const FeatureGrid = ({ title, items }: FeatureGridProps) => (
         {title}
       </Text>
       <div className="grid grid-cols-12 gap-y-8 lg:gap-x-8">
-        {items.map(({ icon, title, text }, index) => (
+        {items.map(({ icon, title, text }) => (
           <motion.div
             key={title}
             className="col-span-12 lg:col-span-6 bg-lightblue p-8 rounded-3xl"
             transition={{ duration: 0.25, ease: 'easeInOut' }}
             viewport={{ once: true, amount: 0.3 }}
-            variants={variants}
+            variants={popVariants}
             initial="hidden"
             whileInView="visible"
           >

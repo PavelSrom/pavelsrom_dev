@@ -1,9 +1,18 @@
 {
 	"hello": "Hej!",
 	"navigation": {
+		"home": "Hjem",
 		"blog": "Blog",
 		"about": "Om mig",
 		"experience": "Erfaring",
 		"tools": "Værktøjer"
-	}
+	},
+	"seo": {
+		"keywords": "Software Development, Web Development, JavaScript, TypeScript, React, Next.js, Node, Pavel Srom",
+    "home": "Få mere at vide om Pavel, en webudvikler fra Tjekkiet, og hvordan han kan hjælpe dig.",
+    "blog": "Læs Pavels seneste blogindlæg, artikler og vejledninger om alle mulige emner.",
+		"about": "Få mere at vide om Pavel, hans passioner og interesser, og hvordan han er nået dertil, hvor han er i dag.",
+		"experience": "Få mere at vide om Pavels erfaring, hans arbejdshistorie, og hvad han har lavet tidligere.",
+		"tools": "Se Pavels værktøjer, hans foretrukne teknologier, og hvad han bruger til at få arbejdet gjort."
+  }
 }

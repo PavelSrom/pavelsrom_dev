@@ -1,28 +1,10 @@
 import clsx from 'clsx'
 import { motion } from 'framer-motion'
+import {
+  slideHorizontalVariants,
+  slideUpVariants,
+} from 'lib/animation-variants'
 import { Container, Text } from 'ui'
-
-const textVariants = {
-  hidden: {
-    opacity: 0,
-    y: 64,
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-  },
-}
-
-const imageVariants = (textPosition: 'left' | 'right') => ({
-  hidden: {
-    opacity: 0,
-    x: textPosition === 'left' ? 64 : -64,
-  },
-  visible: {
-    opacity: 1,
-    x: 0,
-  },
-})
 
 interface TextWithImage {
   image: string
@@ -49,7 +31,7 @@ export const TextWithImage = ({
     <motion.div
       transition={{ duration: 0.5, ease: 'easeInOut' }}
       viewport={{ once: true, amount: 0.7 }}
-      variants={textVariants}
+      variants={slideUpVariants}
       initial="hidden"
       whileInView="visible"
       className={clsx(
@@ -74,7 +56,7 @@ export const TextWithImage = ({
     <motion.div
       transition={{ duration: 0.5, ease: 'easeInOut' }}
       viewport={{ once: true, amount: 0.7 }}
-      variants={imageVariants(textPosition)}
+      variants={slideHorizontalVariants(textPosition)}
       initial="hidden"
       whileInView="visible"
       className={clsx('col-span-12 lg:col-span-6 order-1', {

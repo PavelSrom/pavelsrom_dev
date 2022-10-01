@@ -3,17 +3,25 @@ import Head from 'next/head'
 import { MantineProvider } from '@mantine/core'
 import { NotificationsProvider } from '@mantine/notifications'
 import '../styles/globals.css'
-import { mantineTheme } from '../lib/theme'
-import { Footer } from '../components/footer'
-import { Header } from '../components/header'
+import { mantineTheme } from 'lib/theme'
+import { setLanguage } from 'lib/translation'
+import { Footer } from 'components/footer'
+import { Header } from 'components/header'
+import { useEffect } from 'react'
 
 export default function App(props: AppProps) {
   const { Component, pageProps } = props
 
+  useEffect(() => {
+    const lang = localStorage.getItem('lang')
+    if (lang) {
+      setLanguage(lang)
+    }
+  }, [])
+
   return (
     <>
       <Head>
-        <title>Pavel Srom</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"

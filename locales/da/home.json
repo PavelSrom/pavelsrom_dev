@@ -1,7 +1,9 @@
 {
 	"landing": {
 		"title": "Det moderne web med slutbrugerne i tankerne.",
-		"highlighted": "Altid."
+		"highlighted": "Altid.",
+		"cta": "Læs min blog",
+		"ctaTemp": "Gennemse mine stillinger"
 	},
 	"greeting": {
 		"title": "Hej med dig!",

@@ -1,7 +1,8 @@
 {
 	"landing": {
 		"title": "“What do you work with?”",
-		"description": "Explore the languages, tools and technologies I use!"
+		"description": "Explore the languages, tools and technologies I use!",
+		"cta": "Check out what I use"
 	},
 	"webdev": {
 		"name": "Web development",

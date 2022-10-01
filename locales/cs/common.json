@@ -1,9 +1,18 @@
 {
 	"hello": "Ahoj!",
 	"navigation": {
+		"home": "Domů",
 		"blog": "Blog",
 		"about": "O mně",
 		"experience": "Zkušenosti",
 		"tools": "Nástroje"
-	}
+	},
+	"seo": {
+		"keywords": "Software Development, Web Development, JavaScript, TypeScript, React, Next.js, Node, Pavel Srom",
+    "home": "Zjisti více o Pavlovi, webovém vývojáři z České republiky, a o tom, jak ti může pomoci.",
+    "blog": "Přečti si Pavlovy nejnovější příspěvky na blogu, články a návody na různá témata.",
+		"about": "Přečti si více o Pavlovi, jeho vášních, zájmech a o tom, jak se dostal tam, kde je dnes.",
+		"experience": "Přečti si více o Pavlových zkušenostech, jeho pracovní historii a o tom, co dělal v minulosti.",
+		"tools": "Podívej se na Pavlovy nástroje, jeho oblíbené technologie a na to, co používá k práci."
+  }
 }

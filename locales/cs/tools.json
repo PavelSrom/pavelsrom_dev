@@ -1,7 +1,8 @@
 {
 	"landing": {
 		"title": "“S čím pracuješ?”",
-		"description": "Projdi si jazyky, nástroje a technologie, které používám!"
+		"description": "Projdi si jazyky, nástroje a technologie, které používám!",
+		"cta": "Podívej se, co používám"
 	},
 	"webdev": {
 		"name": "Programování webu",
