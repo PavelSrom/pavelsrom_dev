@@ -1,7 +1,8 @@
 {
 	"landing": {
 		"title": "“Hvad arbejder du med?”",
-		"description": "Udforsk de sprog, værktøjer og teknologier, jeg bruger!"
+		"description": "Udforsk de sprog, værktøjer og teknologier, jeg bruger!",
+		"cta": "Se, hvad jeg bruger"
 	},
 	"webdev": {
 		"name": "Webudvikling",

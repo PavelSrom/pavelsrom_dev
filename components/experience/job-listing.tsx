@@ -10,13 +10,14 @@ import { useTranslation } from 'lib/translation'
 interface JobListingProps {
   abbreviation: string
   logoSrc: string
+  id?: string
 }
 
-export const JobListing = ({ abbreviation, logoSrc }: JobListingProps) => {
+export const JobListing = ({ abbreviation, logoSrc, id }: JobListingProps) => {
   const { t } = useTranslation('experience')
 
   return (
-    <section className="flex flex-col">
+    <section className="flex flex-col" id={id}>
       <Container>
         <div className="grid grid-cols-12 gap-y-8">
           <div className="col-span-12 lg:col-span-7 order-2 lg:order-1 mt-4 lg:mt-0">
