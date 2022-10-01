@@ -4,6 +4,9 @@ const nextTranslate = require('next-translate')
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  experimental: {
+    scrollRestoration: true,
+  },
 }
 
 module.exports = nextTranslate(nextConfig)

@@ -1,7 +1,9 @@
 {
 	"landing": {
 		"title": "Moderní web s ohledem na koncové uživatele.",
-		"highlighted": "Vždy."
+		"highlighted": "Vždy.",
+		"cta": "Přečti si můj blog",
+		"ctaTemp": "Projdi si mé pozice"
 	},
 	"greeting": {
 		"title": "Nazdar!",
