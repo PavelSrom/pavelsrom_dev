@@ -40,7 +40,7 @@ export const Header = () => {
     <header className="pt-8">
       <Container className="flex justify-between items-center">
         <Link href="/">
-          <a className="no-underline text-gray9 font-extrabold">
+          <a className="no-underline text-gray9 hover:text-primary font-extrabold">
             <p className="mr-auto lg:mr-0 text-2xl lg:text-3xl font-normal font-noto">
               Pavel Srom
             </p>
@@ -80,7 +80,10 @@ export const Header = () => {
                   className={
                     currLanguage?.value === value ? 'bg-lightblue' : ''
                   }
-                  onClick={() => setLanguage(value)}
+                  onClick={() => {
+                    setLanguage(value)
+                    localStorage.setItem('lang', value)
+                  }}
                 >
                   <Text>{label}</Text>
                 </Menu.Item>
