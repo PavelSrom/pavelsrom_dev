@@ -1,27 +1,9 @@
 import { motion } from 'framer-motion'
+import {
+  slideHorizontalVariants,
+  slideUpVariants,
+} from 'lib/animation-variants'
 import { Container } from 'ui'
-
-const textVariants = {
-  hidden: {
-    opacity: 0,
-    x: -64,
-  },
-  visible: {
-    opacity: 1,
-    x: 0,
-  },
-}
-
-const imageVariants = {
-  hidden: {
-    opacity: 0,
-    y: 64,
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-  },
-}
 
 interface LandingProps {
   illustration: string
@@ -38,7 +20,7 @@ export const Landing = ({ illustration, textContent }: LandingProps) => (
         <motion.div
           transition={{ duration: 0.5, ease: 'easeInOut', delay: 0.25 }}
           viewport={{ once: true, amount: 0.3 }}
-          variants={textVariants}
+          variants={slideHorizontalVariants('right')}
           initial="hidden"
           whileInView="visible"
           className="col-span-12 lg:col-span-6 order-2 lg:order-1 mt-8 lg:mt-0"
@@ -51,7 +33,7 @@ export const Landing = ({ illustration, textContent }: LandingProps) => (
             alt={illustration}
             transition={{ duration: 0.5, ease: 'easeInOut' }}
             viewport={{ once: true, amount: 0.3 }}
-            variants={imageVariants}
+            variants={slideUpVariants}
             initial="hidden"
             whileInView="visible"
             className="max-w-full h-auto"
