@@ -7,6 +7,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { useDebouncedCallback } from 'use-debounce'
 import { MenuIcon } from 'ui/icons'
+import Link from 'next/link'
 
 export const Header = () => {
   const router = useRouter()
@@ -38,9 +39,13 @@ export const Header = () => {
   return (
     <header className="pt-8">
       <Container className="flex justify-between items-center">
-        <p onClick={() => router.push('/')} className="mr-auto lg:mr-0">
-          {t('hello')}
-        </p>
+        <Link href="/">
+          <a className="no-underline text-gray9 font-extrabold">
+            <p className="mr-auto lg:mr-0 text-2xl lg:text-3xl font-normal font-noto">
+              Pavel Srom
+            </p>
+          </a>
+        </Link>
         <nav className="space-x-4 hidden lg:block">
           {['blog', 'about', 'experience', 'tools'].map(link => (
             <ButtonLink

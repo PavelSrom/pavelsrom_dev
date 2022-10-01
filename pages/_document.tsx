@@ -10,6 +10,8 @@ export default class _Document extends Document {
     return (
       <Html>
         <Head>
+          <meta name="theme-color" content="#4DABF7" />
+          <link rel="icon" href="/assets/favicon.png" type="image/png" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
