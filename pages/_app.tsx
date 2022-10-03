@@ -43,15 +43,9 @@ export default function App(props: AppProps) {
 
       <Script
         strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-					<script 
-						src="https://cdn.counter.dev/script.js"
-						data-id="1d10a130-fe53-4bcf-aab7-c08d262eac2f"
-						data-utcoffset="2"
-					></script>
-				`,
-        }}
+        src="https://cdn.counter.dev/script.js"
+        data-id="1d10a130-fe53-4bcf-aab7-c08d262eac2f"
+        data-utcoffset="2"
       />
     </>
   )
