@@ -1,5 +1,6 @@
 import { getPostBySlug, getPostSlugs } from 'lib/blog'
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
+import { Blockquote } from '@mantine/core'
 import { Prism } from '@mantine/prism'
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
@@ -7,7 +8,7 @@ import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import format from 'date-fns/format'
 import readingTime from 'reading-time'
-import { Container, Text, WhitespaceDivider } from 'ui'
+import { Container, Highlight, Text, WhitespaceDivider } from 'ui'
 
 const BlogPost: NextPage = (props: any) => {
   return (
@@ -31,7 +32,10 @@ const BlogPost: NextPage = (props: any) => {
           {props.meta.thumbnailReference}
         </Text>
 
-        <MDXRemote {...props.source} components={{ Prism }} />
+        <MDXRemote
+          {...props.source}
+          components={{ Blockquote, Highlight, Prism }}
+        />
 
         <WhitespaceDivider tight />
       </main>
