@@ -7,9 +7,11 @@ import format from 'date-fns/format'
 import readingTime from 'reading-time'
 import { Seo } from 'components/seo'
 import { getPosts } from 'lib/blog'
+import { useRouter } from 'next/router'
 
-const Experience: NextPage = (props: any) => {
+const Blog: NextPage = (props: any) => {
   const { t } = useTranslation('blog')
+  const router = useRouter()
 
   console.log('props', props)
 
@@ -36,7 +38,10 @@ const Experience: NextPage = (props: any) => {
           {props.posts.map((post: any) => (
             <div className="col-span-12 md:col-span-6 lg:col-span-4">
               <Card p="lg" radius="lg" withBorder className="h-full">
-                <Card.Section>
+                <Card.Section
+                  className="cursor-pointer"
+                  onClick={() => router.push(`/blog/${post.meta.slug}`)}
+                >
                   <div
                     className="bg-center bg-cover h-80 w-full"
                     style={{
@@ -75,7 +80,9 @@ const Experience: NextPage = (props: any) => {
   )
 }
 
-export const getStaticProps: GetStaticProps = () => {
+export const getStaticProps: GetStaticProps = ctx => {
+  console.log('context', ctx)
+
   const posts = getPosts()
   console.log('posts', posts)
 
@@ -86,4 +93,4 @@ export const getStaticProps: GetStaticProps = () => {
   }
 }
 
-export default Experience
+export default Blog
