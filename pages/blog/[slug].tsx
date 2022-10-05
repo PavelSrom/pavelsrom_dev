@@ -13,7 +13,7 @@ import { Container, Highlight, Text, WhitespaceDivider } from 'ui'
 const BlogPost: NextPage = (props: any) => {
   return (
     <Container>
-      <main className="max-w-3xl mx-auto">
+      <main className="max-w-3xl mx-auto blog_content">
         <WhitespaceDivider tight />
         <Text variant="caption" className="text-right">
           {format(new Date(props.meta.date), 'MMMM dd, yyyy')} -{' '}

@@ -24,34 +24,34 @@ p {
 }
 
 /* otherwise it influences dropdown text from Mantine components */
-main p {
+.blog_content p {
 	margin-bottom: 32px;
 }
 
-main blockquote > p {
+.blog_content blockquote > p {
 	margin: 0;
 }
 
-main h1 {
+.blog_content h1 {
 	font-size: 2.25rem;
 	margin-top: 4rem;
 	margin-bottom: 2rem;
 }
 
-main h2 {
+.blog_content h2 {
 	font-size: 1.5rem;
 	margin-top: 3rem;
 	margin-bottom: 1.5rem;
 }
 
-main ul {
+.blog_content ul {
 	list-style: disc;
 	padding-left: 1rem;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
 
-main li {
+.blog_content li {
 	font-family: 'Noto Sans', sans-serif;
 	font-size: 1.25rem;
 	font-weight: 300;
@@ -60,7 +60,7 @@ main li {
 }
 
 @media (max-width: 768px) {
-	main p, main li {
+	.blog_content p, .blog_content li {
 		font-size: 1.125rem;
 	}
 }
