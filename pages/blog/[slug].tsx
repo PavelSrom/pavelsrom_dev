@@ -61,10 +61,9 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   }
 }
 
-// @ts-ignore
 export const getStaticPaths: GetStaticPaths = async ({ locales }) => {
   const localizedPaths = getPostSlugs().map(slug =>
-    locales?.map(locale => ({
+    (locales ?? []).map(locale => ({
       params: { slug: slug.replace('/', '') },
       locale,
     }))
