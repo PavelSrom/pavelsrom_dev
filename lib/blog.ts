@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import { sync } from 'glob'
 import matter from 'gray-matter'
+import { PostMeta } from 'types/blog'
 
 const postsDirectory = path.join(process.cwd(), 'posts')
 
@@ -39,6 +40,7 @@ export const getPostBySlug = (slug: string) => {
     meta: {
       slug,
       ...data,
+      tags: data.categories.split('__'),
       date: (data.date ?? new Date()).toString(),
     },
   }

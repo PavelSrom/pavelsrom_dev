@@ -10,6 +10,9 @@ module.exports = {
       maxWidth: {
         container: '1408px',
       },
+      maxHeight: {
+        'blog-image': '600px',
+      },
       margin: {
         ['screen-adaptive']: '10vw',
       },

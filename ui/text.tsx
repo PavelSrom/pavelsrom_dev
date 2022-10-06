@@ -33,12 +33,14 @@ export interface TextProps {
   children: React.ReactNode | React.ReactNode[]
   variant?: TextVariant
   className?: string
+  id?: string
 }
 
 export const Text = ({
   children,
   variant = 'body',
   className = '',
+  id,
 }: TextProps) => {
   const Element = elements[variant]
 
@@ -48,6 +50,7 @@ export const Text = ({
         [textColors[variant]]: !className.includes('text-'),
         [className!]: !!className,
       })}
+      id={id}
     >
       {children}
     </Element>

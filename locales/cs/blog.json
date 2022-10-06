@@ -2,6 +2,11 @@
 	"landing": {
 		"title": "“Počkej, ty máš dokonce blog??”",
 		"description": "Přesně tak. Pokračuj a projdi si můj malý koutek internetu!",
-		"descriptionTemp": "Zatím ještě ne, ale pracuji na něm. Máš na co těšit!"
+		"cta": "Začni číst"
+	},
+	"search": {
+		"title": "Ztrať se ve čtení",
+		"description": "Píšu o mnoha věcech, takže si můžeš najít to, co tě zajímá.",
+		"placeholder": "Vyhledat článek"
 	}
 }

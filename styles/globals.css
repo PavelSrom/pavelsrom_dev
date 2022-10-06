@@ -21,6 +21,7 @@ p {
 	font-size: 1.25rem;
 	line-height: 1.6;
 	font-weight: 300;
+	color: #5C5F66;
 }
 
 /* otherwise it influences dropdown text from Mantine components */
@@ -32,7 +33,7 @@ p {
 	margin: 0;
 }
 
-.blog_content h1 {
+.blog_content h1:not(#__title) {
 	font-size: 2.25rem;
 	margin-top: 4rem;
 	margin-bottom: 2rem;
@@ -44,7 +45,7 @@ p {
 	margin-bottom: 1.5rem;
 }
 
-.blog_content ul {
+.blog_content ol, .blog_content ul {
 	list-style: disc;
 	padding-left: 1rem;
 	margin-top: 1rem;
@@ -57,6 +58,7 @@ p {
 	font-weight: 300;
 	margin: 12px 0px;
 	padding-left: 0.5rem;
+	color: #5C5F66;
 }
 
 @media (max-width: 768px) {

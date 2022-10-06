@@ -2,6 +2,11 @@
 	"landing": {
 		"title": "“Wait, you even have a blog?”",
 		"description": "That’s right. Go ahead and browse my little corner of the internet!",
-		"descriptionTemp": "Not yet, but I'm working on it. You have something to look forward to!"
+		"cta": "Start reading"
+	},
+	"search": {
+		"title": "Get lost in the reading",
+		"description": "I write about quite a few things, so you can find what interests you.",
+		"placeholder": "Search for a post"
 	}
 }
