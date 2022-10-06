@@ -18,10 +18,13 @@ export const getPostSlugs = () => {
 export const getPosts = () => {
   const slugs = getPostSlugs()
 
-  return slugs
-    .map(slug => getPostBySlug(slug))
-    .filter(Boolean)
-    .sort((a, b) => new Date(b!.meta.date as string) - new Date(a!.meta.date))
+  return (
+    slugs
+      .map(slug => getPostBySlug(slug))
+      .filter(Boolean)
+      // @ts-ignore
+      .sort((a, b) => new Date(b!.meta.date as string) - new Date(a!.meta.date))
+  )
 }
 
 export const getPostBySlug = (slug: string) => {
@@ -29,7 +32,6 @@ export const getPostBySlug = (slug: string) => {
   const source = fs.readFileSync(postPath)
 
   const { content, data } = matter(source)
-  console.log('data', data)
 
   if (!data.public) {
     return null
