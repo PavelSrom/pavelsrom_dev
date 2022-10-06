@@ -8,6 +8,61 @@
 	padding: 0;
 }
 
-html {
-	scroll-behavior: smooth;
+a {
+	text-decoration: none;
+	color: #4DABF7;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: 'Noto Sans', sans-serif;
+}
+
+p {
+	font-size: 1.25rem;
+	line-height: 1.6;
+	font-weight: 300;
+	color: #5C5F66;
+}
+
+/* otherwise it influences dropdown text from Mantine components */
+.blog_content p {
+	margin-bottom: 32px;
+}
+
+.blog_content blockquote > p {
+	margin: 0;
+}
+
+.blog_content h1:not(#__title) {
+	font-size: 2.25rem;
+	margin-top: 4rem;
+	margin-bottom: 2rem;
+}
+
+.blog_content h2 {
+	font-size: 1.5rem;
+	margin-top: 3rem;
+	margin-bottom: 1.5rem;
+}
+
+.blog_content ol, .blog_content ul {
+	list-style: disc;
+	padding-left: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.blog_content li {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 1.25rem;
+	font-weight: 300;
+	margin: 12px 0px;
+	padding-left: 0.5rem;
+	color: #5C5F66;
+}
+
+@media (max-width: 768px) {
+	.blog_content p, .blog_content li {
+		font-size: 1.125rem;
+	}
 }
