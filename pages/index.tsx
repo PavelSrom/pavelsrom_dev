@@ -50,8 +50,8 @@ const Home: NextPage = () => {
               {t('landing.title')}
               <span className="text-primary"> {t('landing.highlighted')}</span>
             </Text>
-            <ButtonLink href="/experience" size="xl" className="mt-24">
-              {t('landing.ctaTemp')}
+            <ButtonLink href="/blog" size="xl" className="mt-24">
+              {t('landing.cta')}
             </ButtonLink>
           </>
         }
