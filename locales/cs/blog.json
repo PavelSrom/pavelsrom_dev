@@ -7,6 +7,7 @@
 	"search": {
 		"title": "Ztrať se ve čtení",
 		"description": "Píšu o mnoha věcech, takže si můžeš najít to, co tě zajímá.",
-		"placeholder": "Vyhledat článek"
+		"placeholder": "Vyhledat článek",
+		"none": "Těmto kritériím neodpovídají žádné články"
 	}
 }

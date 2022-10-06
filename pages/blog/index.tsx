@@ -108,16 +108,22 @@ const Blog: NextPage = (props: any) => {
       <Container noPadding>
         <section className="bg-lightblue rounded-3xl">
           <div className="px-3 sm:px-8 py-8 md:py-12 lg:px-8 xl:px-16">
-            <div className="grid grid-cols-12 gap-8">
-              {postsToRender.map((post: any) => (
-                <div className="col-span-12 md:col-span-6 xl:col-span-4">
-                  <PostCard
-                    post={post}
-                    onNavigate={() => router.push(`/blog/${post.slug}`)}
-                  />
-                </div>
-              ))}
-            </div>
+            {postsToRender.length === 0 && <Text>({t('search.none')})</Text>}
+            {postsToRender.length > 0 && (
+              <div className="grid grid-cols-12 gap-8">
+                {postsToRender.map((post: any) => (
+                  <div
+                    key={post.meta.slug}
+                    className="col-span-12 md:col-span-6 xl:col-span-4"
+                  >
+                    <PostCard
+                      post={post}
+                      onNavigate={() => router.push(`/blog/${post.meta.slug}`)}
+                    />
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </section>
       </Container>

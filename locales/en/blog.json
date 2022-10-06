@@ -7,6 +7,7 @@
 	"search": {
 		"title": "Get lost in the reading",
 		"description": "I write about quite a few things, so you can find what interests you.",
-		"placeholder": "Search for a post"
+		"placeholder": "Search for a post",
+		"none": "There are no posts matching this criteria"
 	}
 }
