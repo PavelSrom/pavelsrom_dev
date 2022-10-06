@@ -11,14 +11,19 @@ import readingTime from 'reading-time'
 import { Container, Highlight, Text, WhitespaceDivider } from 'ui'
 import { BlogImage } from 'components/blog/blog-image'
 import { PostMeta } from 'types/blog'
+import Head from 'next/head'
 
 interface BlogPostProps {
   source: MDXRemoteSerializeResult
   meta: PostMeta
 }
 
-const BlogPost: NextPage<BlogPostProps> = props => {
-  return (
+const BlogPost: NextPage<BlogPostProps> = props => (
+  <>
+    <Head>
+      <title>{props.meta.title} | Pavel Srom</title>
+      <meta name="description" content={props.meta.description} />
+    </Head>
     <Container>
       <main className="max-w-3xl mx-auto blog_content">
         <WhitespaceDivider tight />
@@ -56,8 +61,8 @@ const BlogPost: NextPage<BlogPostProps> = props => {
         <WhitespaceDivider tight />
       </main>
     </Container>
-  )
-}
+  </>
+)
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const post = getPostBySlug(params!.slug as string)
