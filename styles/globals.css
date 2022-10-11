@@ -55,6 +55,7 @@ p {
 .blog_content li {
 	font-family: 'Noto Sans', sans-serif;
 	font-size: 1.25rem;
+	line-height: 1.6;
 	font-weight: 300;
 	margin: 12px 0px;
 	padding-left: 0.5rem;
