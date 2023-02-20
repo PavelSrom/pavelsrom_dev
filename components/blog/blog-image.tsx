@@ -7,8 +7,10 @@ interface BlogImageProps {
 }
 
 export const BlogImage = ({ src, alt }: BlogImageProps) => {
-  const [textWidth, setTextWidth] = useState<number>(0)
   const imageRef = useRef<HTMLImageElement | null>(null)
+  const [textWidth, setTextWidth] = useState<number>(
+    () => imageRef.current?.width || 0
+  )
 
   useEffect(() => {
     if (imageRef.current) {
