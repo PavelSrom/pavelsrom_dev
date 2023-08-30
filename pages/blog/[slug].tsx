@@ -53,10 +53,12 @@ const BlogPost: NextPage<BlogPostProps> = props => (
           </Text>
         </a>
 
-        <MDXRemote
-          {...props.source}
-          components={{ Blockquote, BlogImage, Highlight, Prism }}
-        />
+        <div style={{ textAlign: 'justify' }}>
+          <MDXRemote
+            {...props.source}
+            components={{ Blockquote, BlogImage, Highlight, Prism }}
+          />
+        </div>
 
         <WhitespaceDivider tight />
       </main>

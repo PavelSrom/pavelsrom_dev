@@ -41,7 +41,7 @@ const Experience: NextPage = () => {
   const gearIcons = [
     [<AppleIcon size="large" />, <LaptopIcon size="large" />],
     [<AppleIcon size="large" />, <PhoneIcon size="large" />],
-    [<AppleIcon size="large" />, <WatchIcon size="large" />],
+    [<WatchIcon size="large" />],
     [<AppleIcon size="large" />, <EarbudsIcon size="large" />],
     [<AppleIcon size="large" />, <KeyboardIcon size="large" />],
     [<AppleIcon size="large" />, <MouseIcon size="large" />],
