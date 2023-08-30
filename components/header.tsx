@@ -9,30 +9,30 @@ import { useDebouncedCallback } from 'use-debounce'
 import { MenuIcon } from 'ui/icons'
 import Link from 'next/link'
 
+const languages = [
+  {
+    label: 'English',
+    value: 'en',
+    icon: '/assets/united-states.png',
+  },
+  {
+    label: 'Dansk',
+    value: 'da',
+    icon: '/assets/denmark.png',
+  },
+  {
+    label: 'Čeština',
+    value: 'cs',
+    icon: '/assets/czech-republic.png',
+  },
+] as const
+
 export const Header = () => {
   const router = useRouter()
   const { t, lang } = useTranslation('common')
   const [menuOpen, setMenuOpen] = useState(false)
 
   const reroute = useDebouncedCallback((link: string) => router.push(link), 250)
-
-  const languages = [
-    {
-      label: 'English',
-      value: 'en',
-      icon: '/assets/united-states.png',
-    },
-    {
-      label: 'Dansk',
-      value: 'da',
-      icon: '/assets/denmark.png',
-    },
-    {
-      label: 'Čeština',
-      value: 'cs',
-      icon: '/assets/czech-republic.png',
-    },
-  ] as const
 
   const currLanguage = languages.find(l => l.value === lang)
 
