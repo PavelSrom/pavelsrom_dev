@@ -1,0 +1,268 @@
+---
+title: How to get better at TypeScript
+date: 2023-11-26
+description:
+  Because it's more than worth the effort
+categories: typescript
+thumbnailUrl: https://images.unsplash.com/photo-1614064745560-e556fef374b0?q=80&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+thumbnailReference: FLY:D
+thumbnailSource: Unsplash
+public: true
+---
+
+The TypeScript language and ecosystem has experienced tremendous growth in the last few years.
+It has become the de-facto standard language for frontend development, and I'm so happy about
+that because it really is a stellar language. I switched to TypeScript in mid-2020 and to be
+honest with you, there's no way I'm going back to JavaScript. There's simply too many benefits
+to TypeScript that I can't live without anymore.
+
+However, that hasn't always been the case. The first few months of going cold-turkey on
+JavaScript and fully embracing TypeScript were quite painful. The emotional rollercoaster and
+love-hate relationship with TypeScript was something I had not anticipated in the slightest.
+Nevertheless, TypeScript is a skill that can - and should - be practiced and improved upon.
+
+From my experience so far, most developers can get by with a fairly basic understanding of
+TypeScript. There's nothing inherently wrong with that, typing your day to day React code
+isn't that hard, after all. If you're a library maintainer or you simply want to get the most
+out of the language, however, you'll need to go deeper. When you do, you'll be rewarded with
+APIs that are robust and simple to use, libraries that are a joy to work with, and developer
+experience that brightens your day.
+
+I'm no expert on TypeScript and don't even aspire to be one - it's Turing complete, which means
+you can do some truly insane stuff with it like typing a full [bubble sort algorithm](https://twitter.com/anuraghazru/status/1511776290487279616?t=aor9BDIhHh7Q-cQ_XpTmtA&s=19).
+That said, I'd like to share the things that have had the most impact on my TypeScript skills.
+Some of them are mindset shifts, others are practical tips.
+
+Let's dive in!
+
+# Mindset shifts
+
+## Embrace the set theory
+
+I learned the concept of set theory about 1,5 years ago and it has significantly improved my
+understanding of TypeScript. Set theory is a branch of mathematics that deals with sets, which
+are collections of objects. If that sounds like a mouthful, don't worry, the application of
+set theory in TypeScript is much simpler than that.
+
+Set theory in TypeScript is all about thinking of types as a list of all the possible values
+that a type can hold. For example, the type `string` is a set of all the possible strings that
+can exist. The type `number` is a set of all the possible numbers that can exist. And so on.
+Let's look at them visualized in code:
+
+<Prism language="tsx">
+	{`
+type MyString = string; // 'hey', 'hello', 'world', etc. - all the possible strings
+type MyNumber = number; // 1, 2, 3, etc. - all the possible numbers
+type MyBoolean = boolean; // true, false - booleans can only hold two values
+	`}
+</Prism>
+<br />
+
+This is probably nothing new, but what if we want to narrow down the set of possible values
+to create a more useful string type? For example, we might want to create a string union
+of array methods starting with letter "r". Let's look at how that would be done:
+
+<Prism language="tsx">
+	{`
+type ArrMethods = keyof Array<any>; // gives you all methods as well as indexes
+type StartingWithR = ArrMethods & \`r\${string}\`; // 'reduce' | 'reduceRight' | 'reverse'
+	`}
+</Prism>
+<br />
+
+Plain `ArrMethods` is a set of all the possible values that can exist on an array. By using
+the `&` operator, we can narrow down the set of possible values to only those starting with
+letter `'r'`. Because we only care that the keys start with "r", we can use the `string` type
+to represent the rest of the string. This is a very powerful concept that can be used to
+create very specific types.
+
+By the way, have you ever wondered why we use `never` in conditional types?
+
+<Prism language="tsx">
+	{`
+type Strings = 'hello' | 'there' | 'world'
+type MyExtract<T, U> = T extends U ? T : never
+
+type There = MyExtract<Strings, \`t\${string}\`> // 'there'
+	`}
+</Prism>
+<br />
+
+The reason is that `never` is an empty set. It cannot hold anything, so when TypeScript
+sees `never` in a union, it will remove it from the union. It's like going to a store
+with a shopping list (the condition in your type). When an item matches your list, you
+put it in your cart. If it doesn't match, you leave it on the shelf. `never` is like
+an empty shelf, so TypeScript will leave it on the shelf.
+
+## Think of generics as arguments to a function
+
+In TypeScript, understanding generics can be made simpler by thinking of them as arguments
+to a function. Much like how functions take arguments to operate on different values,
+generics allow types to work with different data types. When you define a generic, you're
+essentially creating a template that can be filled with various types. This flexibility
+enables you to write more reusable and adaptable code.
+
+The following example shows how similar generics are to function arguments:
+
+<Prism language="tsx">
+	{`
+// kind of like saying "function \`Query\` that takes \`TData\` as an argument"
+type Query<TData> = {
+  data: TData;
+  isLoading: boolean;
+}
+
+type StringQuery = Query<string>; // { data: string; isLoading: boolean; }
+type NumberQuery = Query<number>; // { data: number; isLoading: boolean; }
+
+// function \`makeQuery\` that takes \`data\` as an argument
+const makeQuery = data => ({
+  data,
+  isLoading: false,
+});
+
+const query1 = makeQuery('hello'); // { data: 'hello', isLoading: false }
+const query2 = makeQuery(23); // { data: 23, isLoading: false }
+	`}
+</Prism>
+
+## When designing APIs, begin from the end
+
+Every time I'm designing a new API, be it a library or anything else, I never worry about
+the implementation details. I never think about "Oh my god how am I going to type this?".
+Instead, I start from the end and gather all necessary requirements and features first,
+then sketch out possible syntaxes and APIs that would satisfy those requirements. I pay
+close attention to how intuitive and natural the API feels. **Only then** do I start
+thinking about how to implement it and type it properly.
+
+There's no reason to worry about typings. If you can build it in JavaScript, you can build
+it in TypeScript. The only difference is that you'll need to add some types to make it work,
+and if you can't figure out how to do that, that's a great opportunity to get better at
+TypeScript - it's a win-win situation.
+
+# Practical tips
+
+## Learn intermediate concepts
+
+Once you grasp generics, it's time to look into things like conditional types, mapped types,
+and utility types such as `ReturnType`, `Partial`, `Pick`, `Exclude` etc. Apart from all these
+concepts, there are also techniques that are a bit more nuanced:
+
+- type guards
+- key remapping
+- discriminated unions
+- the `infer` keyword
+- the `as const` keyword
+
+Equipped with these concepts, you'll be able to write more robust code, create better APIs,
+and improve the developer experience of your libraries. For example, just a few weeks ago
+I had a use case where I needed to convert strings from snake case to camel case:
+
+<Prism language="tsx">
+	{`
+type SnakeCase = 'hello_world' | 'hey' | 'typescript_is_cool';
+
+type Camelize<S extends string> =
+  S extends \`\${infer F}_\${infer L}\${infer R}\` ? \`\${F}\${Capitalize<L>}\${Camelize<R>}\` : S;
+
+type Result = Camelize<SnakeCase>; // 'helloWorld' | 'hey' | 'typescriptIsCool'
+	`}
+</Prism>
+<br />
+
+You can see how combining these concepts can lead to some pretty powerful results. All I
+needed to make this work was a conditional type, the `infer` keyword, the `Capitalize` utility
+type, and recursion.
+
+## Practice, practice, practice
+
+There's no way around it - getting better at TypeScript requires a lot of practice. While it
+might help to read about the concepts and watch YouTube tutorials, the only way to truly
+understand them is by building your own types and using them in your code.
+
+Try to make your own utility types that should work the same way as the built-in ones. For
+example, your own `MyPick` that should imitate the built-in `Pick`. Once you start to feel
+comfortable with what you know, try to build a library that uses these concepts.
+
+Recently I've been working on a [Tanstack Query](https://tanstack.com/query/latest) wrapper
+that would receive an API schema - a definition of all the endpoints and their return types -
+and generate a fully typed client based on that schema. It looks a lot like creating my own
+type-safe [tRPC client](https://trpc.io/docs/client/react) - it's almost the same syntactic
+sugar, but also has some extra functionality on top. Here's what it looks like (simplified
+for brevity):
+
+<Prism language="tsx">
+	{`
+export type QueryApi<
+  TApiInstance extends Record<keyof TApiInstance, Fetcher<any, any, any>>,
+  K extends keyof TApiInstance
+> = {
+  useQuery: <TData = FetcherData<TApiInstance, K>, TError = Error>(
+    params: FetcherParams<TApiInstance, K>,
+    options?: Omit<
+      UseQueryOptions<TData, TError>,
+      "queryKey" | "queryFn" | "meta"
+    > & { meta?: FetcherMeta<TApiInstance, K> }
+  ) => UseQueryResult<TData, TError>;
+  useMutation: <
+    TData = FetcherData<TApiInstance, K>,
+    TError = Error,
+    TVariables = FetcherParams<TApiInstance, K>
+  >(
+    options?: Omit<
+      UseMutationOptions<TData, TError, TVariables>,
+      "mutationKey" | "mutationFn" | "meta"
+    > & { meta?: FetcherMeta<TApiInstance, K> }
+  ) => UseMutationResult<TData, TError, TVariables>;
+  getQueryKey: <TParams extends FetcherParams<TApiInstance, K>>(
+    params: TParams | (() => DeepPartial<TParams>)
+  ) => readonly unknown[];
+  getQueryFn: () => TApiInstance[K];
+  getQueryPair: <
+    TParams extends FetcherParams<TApiInstance, K>,
+    TMeta extends FetcherMeta<TApiInstance, K>
+  >(
+    params: TParams,
+    meta: TMeta
+  ) => {
+    queryKey: readonly unknown[];
+    queryFn: () => Promise<FetcherData<TApiInstance, K>>;
+  };
+};
+
+export type QueryApiClient<
+  TApiInstance extends Record<keyof TApiInstance, Fetcher<any, any, any>>
+> = {
+  // pick properties from \`QueryApi\` depending on the key prefix,
+  // so that the developer cannot use e.g. \`useMutation\` on a query
+  [K in keyof TApiInstance]: K extends \`\${QueryPrefix}\${string}\`
+    ? Pick<
+        QueryApi<TApiInstance, K>,
+        "useQuery" | "getQueryFn" | "getQueryKey" | "getQueryPair"
+      >
+    : K extends \`\${MutationPrefix}\${string}\`
+    ? Pick<QueryApi<TApiInstance, K>, "useMutation">
+    : never;
+};
+	`}
+</Prism>
+<br />
+
+It's okay if the code above is giving you a headache, the relative complexity is not the
+point. The point is being able to create type-safe, intuitive APIs that are easy to use
+and a joy to work with thanks to TypeScript's ability to take developer experience to
+a completely new level.
+
+I've reached a point where being able to create APIs like the one above suffices for my
+needs. I'm obviously nowhere near advanced or even expert level, but to be honest, I don't
+really care, nor do I have a need or a compelling reason to get there. Make me a Redux or
+even XState maintainer and it will be a very different story.
+
+# Helpful learning resources
+
+I can recommend the following resources to help you get better at TypeScript:
+
+- [Matt Pocock](https://www.youtube.com/@mattpocockuk) - a true TypeScript wizard, he's also very active on Twitter
+- [Andrew Burgess](https://www.youtube.com/@andrew-burgess) - great TypeScript videos, especially the hands-on ones
+- [Frontend Masters](https://frontendmasters.com/topics/typescript/) - many courses to teach you TypeScript
+- [Type Challenges](https://github.com/type-challenges/type-challenges) - the obvious choice for practice examples
