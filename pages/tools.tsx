@@ -43,9 +43,8 @@ const Experience: NextPage = () => {
     [<AppleIcon size="large" />, <PhoneIcon size="large" />],
     [<WatchIcon size="large" />],
     [<AppleIcon size="large" />, <EarbudsIcon size="large" />],
-    [<AppleIcon size="large" />, <KeyboardIcon size="large" />],
-    [<AppleIcon size="large" />, <MouseIcon size="large" />],
-    [<KeyboardIcon size="large" />, <MouseIcon size="large" />],
+    [<KeyboardIcon size="large" />],
+    [<MouseIcon size="large" />],
   ]
 
   return (
@@ -70,7 +69,7 @@ const Experience: NextPage = () => {
       <WhitespaceDivider />
       <ToolGrid section="apps" size={9} icons={appsIcons} />
       <WhitespaceDivider />
-      <ToolGrid section="gear" size={7} icons={gearIcons} />
+      <ToolGrid section="gear" size={6} icons={gearIcons} />
       <WhitespaceDivider tight />
     </>
   )
