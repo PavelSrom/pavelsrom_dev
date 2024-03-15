@@ -1,67 +1,67 @@
 {
-	"landing": {
-		"title": "“Hvem er du egentlig?”",
-		"description": "Opdag min historie, passioner og interesser",
-		"cta": "Læs min blog"
-	},
-	"tech": {
-		"title": "Den traditionelle tech-begejstring",
-		"text": "Ligesom for mange andre programmører ligger tech mig meget nært. Jeg holder mig opdateret om de seneste innovationer i forhold til webbet, ser hver eneste Apple Keynote og håber, at vi får selvkørende biler verden over inden for 5 år."
-	},
-	"travel": {
-		"title": "En nysgerrig udforsker",
-		"text": "Hvert nyt sted, jeg kommer til, har noget unikt, som jeg gerne vil opdage. Det er en fantastisk måde at få mig ud af min komfortzone og skabe minder, der vil vare hele livet.",
-		"caption": "Mig på en rejse til Preikestolen, Norge"
-	},
-	"feature_grid": {
-		"title": "Vent, det er ikke alt!",
-		"0": {
-			"title": "Fitness og løb",
-			"text": "Jeg tager mit helbred alvorligt, og selv om jeg har dyrket mange forskellige sportsgrene i mit liv, har jeg i de seneste år holdt mig til en kombination af vægtet calisthenics og vægte. Som et lille cardiotillæg løber jeg en tur ca. to gange om ugen."
-		},
-		"1": {
-			"title": "Psykologi og psykisk sundhed",
-			"text": "Psykisk sundhed er lige så vigtig som fysisk sundhed. Ved at forstå, hvordan mine tankemønstre fungerer, og ved at praktisere forskellige afslapningsrutiner kan jeg holde min stress på afstand og sørge for, at jeg kan arbejde klart og uden negative påvirkninger."
-		},
-		"2": {
-			"title": "Bartender og barista",
-			"text": "Hvem ville have troet, at jeg virkelig kunne lide at arbejde bag baren? Uanset om det er ved at lave cappuccinoer, ice lattes, gin og tonics eller bare ved at snakke med kunderne, har jeg lært mange ting af at være barista og bartender, som jeg stadig drager nytte af den dag i dag."
-		},
-		"3": {
-			"title": "Sprogindlæring",
-			"text": "Jeg har sagt det mange gange, og jeg vil sige det igen - at lære engelsk på et avanceret niveau har været den bedste beslutning i mit liv, og for at følge i dens fodspor har jeg arbejdet lige så hårdt på mit dansk. Lad os håbe, at jeg en dag kan sige 'rødgrød med fløde' uden accent!"
-		}
-	},
-	"story": {
-		"title": "Så du ønsker at vide alt?",
-		"text": "Okay, så. Må dit ønske gå i opfyldelse!",
-		"0": {
-			"title": "Før gymnasiet",
-			"paragraphs": {
-				"0": "Jeg er opvokset i en lille by ved navn Hradec nad Moravici i Tjekkiet. I mine første skoleår var jeg den typiske kloge dreng - jeg behøvede aldrig at lære noget for at få gode karakterer. Desværre førte det også til et par år med mobning. Senere skiftede jeg skole og blev omgivet af mere venlige klassekammerater. Lige omkring den tid begyndte min kærlighed til computerspil også at vinde indpas.",
-				"1": ""
-			}
-		},
-		"1": {
-			"title": "Gymnasiet",
-			"paragraphs": {
-				"0": "I starten af min gymnasietid spillede jeg en del, mest konkurrerende multiplayer-spil. Det var min måde at slappe af på efter en dag i skolen. I løbet af sommeren 2016 blev jeg vanvittigt forelsket i cykling og rejste over 2000km på bare to måneder. Jeg husker stadig tydeligt den gode stemning, som al cykling gav mig.",
-				"1": "Mod slutningen af gymnasiet gik det op for mig, at jeg faktisk foretrak at studere i udlandet frem for i mit hjemland, og derfor begyndte jeg i slutningen af 2016 at tage engelsk alvorligt og begyndte at lære det på egen hånd. Omkring et år senere bestod jeg CAE-certifikatet, og den dag, hvor jeg fik resultatet, har været den bedste dag i mit liv. Et par måneder efter lykkedes det mig at bestå min studentereksamen og få tilbudt en studieplads i Aalborg, Danmark."
-			}
-		},
-		"2": {
-			"title": "Danmark",
-			"paragraphs": {
-				"0": "Jeg begyndte at lære webudvikling fra bunden i begyndelsen af september 2018. Et par dage senere opdagede jeg et websted kaldet FreeCodeCamp, en nonprofitorganisation, der underviser folk i at kode. Så snart jeg havde gennemgået et par afsnit med HTML-tutorials, var jeg hooked og begyndte min rejse mod at blive webudvikler.",
-				"1": "Efter at jeg var flyttet til København, meldte jeg mig ind i Frederiksberg Toastmasters, som er et fællesskab for offentlige taler. Jeg begyndte også at arbejde frivilligt bag baren på Studenterhuset, og det var en fascinerende oplevelse gennem de få måneder, jeg var der. Det var en rigtig god beslutning at flytte til København, mest på grund af de muligheder, som byen giver. Jeg har mødt mange nye mennesker, hvoraf nogle er blevet mine venner, og det er en smuk by med masser at byde på."
-			}
-		},
-		"3": {
-			"title": "Hvad kommer bagefter",
-			"paragraphs": {
-				"0": "Jeg ville ønske, jeg havde en krystalkugle, men da jeg ikke har en sådan, er det meget svært at sige, hvad der kommer til at ske i de kommende år. Der er mange forskellige muligheder, som jeg kan vælge - flytte til et andet land, tage fri for at rejse, bruge mere tid på at dyrke mine hobbyer og så videre. Jeg har helt sikkert et par idéer, der er værd at bruge tid på, i tankerne, men kun tiden vil vise, hvilke af dem der vil blive realiseret. Hvis jeg skal være mere specifik, vil jeg dog sige, at jeg vil udforske webudviklingsverdenen yderligere, meget yderligere, og måske gå over til en anden gren af programmering såsom kunstig intelligens.",
-				"1": "I forhold til personlige interesser, er en af de ting, der ikke er til forhandling på listen, helt sikkert at lære dansk på et avanceret niveau. Jeg har tilbragt så mange år i Danmark, og landet er simpelthen blevet så indgroet i mig på nuværende tidspunkt, at jeg gerne vil lære sproget fuldt ud. Det bliver på ingen måde en let opgave, men som mange andre har bevist, kan det lade sig gøre."
-			}
-		}
-	}
+  "landing": {
+    "title": "“Hvem er du egentlig?”",
+    "description": "Opdag min historie, passioner og interesser",
+    "cta": "Læs min blog"
+  },
+  "tech": {
+    "title": "Den traditionelle tech-begejstring",
+    "text": "Ligesom for mange andre programmører ligger tech mig meget nært. Jeg holder mig opdateret om de seneste innovationer i forhold til webbet, ser hver eneste Apple Keynote og håber, at vi får selvkørende biler verden over inden for 5 år."
+  },
+  "travel": {
+    "title": "En nysgerrig udforsker",
+    "text": "Hvert nyt sted, jeg kommer til, har noget unikt, som jeg gerne vil opdage. Det er en fantastisk måde at få mig ud af min komfortzone og skabe minder, der vil vare hele livet.",
+    "caption": "Mig på en rejse til Portugal i 2024"
+  },
+  "feature_grid": {
+    "title": "Vent, det er ikke alt!",
+    "0": {
+      "title": "Fitness og løb",
+      "text": "Jeg tager mit helbred alvorligt, og selv om jeg har dyrket mange forskellige sportsgrene i mit liv, har jeg i de seneste år holdt mig til en kombination af vægtet calisthenics og vægte. Som et lille cardiotillæg løber jeg en tur ca. to gange om ugen."
+    },
+    "1": {
+      "title": "Psykologi og psykisk sundhed",
+      "text": "Psykisk sundhed er lige så vigtig som fysisk sundhed. Ved at forstå, hvordan mine tankemønstre fungerer, og ved at praktisere forskellige afslapningsrutiner kan jeg holde min stress på afstand og sørge for, at jeg kan arbejde klart og uden negative påvirkninger."
+    },
+    "2": {
+      "title": "Bartender og barista",
+      "text": "Hvem ville have troet, at jeg virkelig kunne lide at arbejde bag baren? Uanset om det er ved at lave cappuccinoer, ice lattes, gin og tonics eller bare ved at snakke med kunderne, har jeg lært mange ting af at være barista og bartender, som jeg stadig drager nytte af den dag i dag."
+    },
+    "3": {
+      "title": "Sprogindlæring",
+      "text": "Jeg har sagt det mange gange, og jeg vil sige det igen - at lære engelsk på et avanceret niveau har været den bedste beslutning i mit liv, og for at følge i dens fodspor har jeg arbejdet lige så hårdt på mit dansk. Lad os håbe, at jeg en dag kan sige 'rødgrød med fløde' uden accent!"
+    }
+  },
+  "story": {
+    "title": "Så du ønsker at vide alt?",
+    "text": "Okay, så. Må dit ønske gå i opfyldelse!",
+    "0": {
+      "title": "Før gymnasiet",
+      "paragraphs": {
+        "0": "Jeg er opvokset i en lille by ved navn Hradec nad Moravici i Tjekkiet. I mine første skoleår var jeg den typiske kloge dreng - jeg behøvede aldrig at lære noget for at få gode karakterer. Desværre førte det også til et par år med mobning. Senere skiftede jeg skole og blev omgivet af mere venlige klassekammerater. Lige omkring den tid begyndte min kærlighed til computerspil også at vinde indpas.",
+        "1": ""
+      }
+    },
+    "1": {
+      "title": "Gymnasiet",
+      "paragraphs": {
+        "0": "I starten af min gymnasietid spillede jeg en del, mest konkurrerende multiplayer-spil. Det var min måde at slappe af på efter en dag i skolen. I løbet af sommeren 2016 blev jeg vanvittigt forelsket i cykling og rejste over 2000km på bare to måneder. Jeg husker stadig tydeligt den gode stemning, som al cykling gav mig.",
+        "1": "Mod slutningen af gymnasiet gik det op for mig, at jeg faktisk foretrak at studere i udlandet frem for i mit hjemland, og derfor begyndte jeg i slutningen af 2016 at tage engelsk alvorligt og begyndte at lære det på egen hånd. Omkring et år senere bestod jeg CAE-certifikatet, og den dag, hvor jeg fik resultatet, har været den bedste dag i mit liv. Et par måneder efter lykkedes det mig at bestå min studentereksamen og få tilbudt en studieplads i Aalborg, Danmark."
+      }
+    },
+    "2": {
+      "title": "Danmark",
+      "paragraphs": {
+        "0": "Jeg begyndte at lære webudvikling fra bunden i begyndelsen af september 2018. Et par dage senere opdagede jeg et websted kaldet FreeCodeCamp, en nonprofitorganisation, der underviser folk i at kode. Så snart jeg havde gennemgået et par afsnit med HTML-tutorials, var jeg hooked og begyndte min rejse mod at blive webudvikler.",
+        "1": "Efter at jeg var flyttet til København, meldte jeg mig ind i Frederiksberg Toastmasters, som er et fællesskab for offentlige taler. Jeg begyndte også at arbejde frivilligt bag baren på Studenterhuset, og det var en fascinerende oplevelse gennem de få måneder, jeg var der. Det var en rigtig god beslutning at flytte til København, mest på grund af de muligheder, som byen giver. Jeg har mødt mange nye mennesker, hvoraf nogle er blevet mine venner, og det er en smuk by med masser at byde på."
+      }
+    },
+    "3": {
+      "title": "Hvad kommer bagefter",
+      "paragraphs": {
+        "0": "Jeg ville ønske, jeg havde en krystalkugle, men da jeg ikke har en sådan, er det meget svært at sige, hvad der kommer til at ske i de kommende år. Der er mange forskellige muligheder, som jeg kan vælge - flytte til et andet land, tage fri for at rejse, bruge mere tid på at dyrke mine hobbyer og så videre. Jeg har helt sikkert et par idéer, der er værd at bruge tid på, i tankerne, men kun tiden vil vise, hvilke af dem der vil blive realiseret. Hvis jeg skal være mere specifik, vil jeg dog sige, at jeg vil udforske webudviklingsverdenen yderligere, meget yderligere, og måske gå over til en anden gren af programmering såsom kunstig intelligens.",
+        "1": "I forhold til personlige interesser, er en af de ting, der ikke er til forhandling på listen, helt sikkert at lære dansk på et avanceret niveau. Jeg har tilbragt så mange år i Danmark, og landet er simpelthen blevet så indgroet i mig på nuværende tidspunkt, at jeg gerne vil lære sproget fuldt ud. Det bliver på ingen måde en let opgave, men som mange andre har bevist, kan det lade sig gøre."
+      }
+    }
+  }
 }

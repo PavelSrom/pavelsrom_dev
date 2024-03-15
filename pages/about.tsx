@@ -61,7 +61,7 @@ const About: NextPage = () => {
       />
       <WhitespaceDivider />
       <TextWithImage
-        image="pulpit_rock.png"
+        image="portugal.jpeg"
         imageAlt="Me in Norway"
         title={t('travel.title')}
         text={t('travel.text')}

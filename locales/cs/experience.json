@@ -1,38 +1,38 @@
 {
-	"landing": {
-		"title": "“Na čem jsi pracoval?”",
-		"description": "Zjisti více o mých předchozích projektech a pozicích",
-		"cta": "Projdi si mé pozice"
-	},
-	"helped": "Pomohl jsem",
-	"ca": {
-		"title": "Full-stack vývojář",
-		"company": "Copyright Agent",
-		"period": "únor 2022 - červenec 2022",
-		"employment": "plný úvazek",
-		"location": "on-site v Kodani, Dánsko",
-		"size": "51-200 zaměstnanců",
-		"description": "Půl roku jsem pracoval v týmu asi 12 vývojářů na velké mikroservisní aplikaci. Byl jsem zodpovědný hlavně za vývoj frontendu, který byl postaven na Reactu a TypeScriptu. Pracoval jsem také na backendu, který byl postaven pomocí Node.js a TypeScriptu.",
-		"helped": {
-			"0": "zlepšit vývojářskou přívětivost díky lepšímu typování a nastavení standardů jazyka TypeScript pro celý programátorský tým",
-			"1": "vytvářet nové funkce z frontu do backu, včetně práce s rozhraním REST API, databázemi a migrací databází",
-			"2": "vzdělávat kolegy v oblasti TypeScriptu prostřednictvím workshopů a psaní rozsáhlé dokumentace s typovými výzvami",
-			"3": "vylepšovat stávajících designových systémů v souladu se stylistickým návodem"
-		}
-	},
-	"dt": {
-		"title": "Front-end vývojář",
-		"company": "Designers Trust",
-		"period": "březen 2020 - leden 2022",
-		"employment": "částečný úvazek",
-		"location": "dálkově z Kodaně, Dánsko",
-		"size": "11-50 zaměstnanců",
-		"description": "Mým úkolem v Designers Trust bylo vyvíjet a udržovat webovou aplikaci, a to od nuly. Pracoval jsem výhradně na frontendu postaveném v Reactu a TypeScriptu. Díky mé práci a práci mého kolegy je aplikace velmi důkladně otypovaná.",
-		"helped": {
-			"0": "vytvořit celou aplikaci od nuly až po její napojení k více než 150 endpointům",
-			"1": "zajistit špičkovou otypovanost díky více než 99% typovému pokrytí",
-			"2": "provádět mnoho refaktorů, např. z JavaScriptu do TypeScriptu",
-			"3": "vytvářet uživatelská rozhraní v souladu se stylistickým návodem"
-		}
-	}
+  "landing": {
+    "title": "“Na čem jsi pracoval?”",
+    "description": "Zjisti více o mých předchozích projektech a pozicích",
+    "cta": "Projdi si mé pozice"
+  },
+  "helped": "Pomohl jsem",
+  "sg": {
+    "title": "Front-end vývojář",
+    "company": "Shape Games",
+    "period": "září 2022 - do současnosti",
+    "employment": "plný úvazek",
+    "location": "on-site v Kodani, Dánsko",
+    "size": "100+ zaměstnanců",
+    "description": "Mým úkolem v Shape Games je vývoj vlastních knihoven a komponent pro uživatelská rozhraní. V poslední době mám na starost také vývoj nové knihovny pro práci s asynchronním state managementem, která bude použita v celé aplikaci.",
+    "helped": {
+      "0": "vést vývoj knihovny pro asynchronní state management, která má škálovatelnost jako hlavní prioritu",
+      "1": "v průběžném vývoji několika doménových oblastí v aplikaci jako jediný webový pracovník v mém týmu",
+      "2": "samostatně provést rozsáhlý refaktor zahrnující desítky souborů v průběhu několika týdnů",
+      "3": "v přidání unit a integračních testů do klíčových částí mých oblastí odpovědnosti, aby byla zajištěna robustnost"
+    }
+  },
+  "ca": {
+    "title": "Full-stack vývojář",
+    "company": "Copyright Agent",
+    "period": "únor 2022 - červenec 2022",
+    "employment": "plný úvazek",
+    "location": "on-site v Kodani, Dánsko",
+    "size": "51-100 zaměstnanců",
+    "description": "Půl roku jsem pracoval v týmu asi 12 vývojářů na velké mikroservisní aplikaci. Byl jsem zodpovědný hlavně za vývoj frontendu, který byl postaven na Reactu a TypeScriptu. Pracoval jsem také na backendu, který byl postaven pomocí Node.js a TypeScriptu.",
+    "helped": {
+      "0": "zlepšit vývojářskou přívětivost díky lepšímu typování a nastavení standardů jazyka TypeScript pro celý programátorský tým",
+      "1": "vytvářet nové funkce z frontu do backu, včetně práce s rozhraním REST API, databázemi a migrací databází",
+      "2": "vzdělávat kolegy v oblasti TypeScriptu prostřednictvím workshopů a psaní rozsáhlé dokumentace s typovými výzvami",
+      "3": "vylepšovat stávajících designových systémů v souladu se stylistickým návodem"
+    }
+  }
 }
