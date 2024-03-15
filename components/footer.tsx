@@ -54,7 +54,7 @@ export const Footer = () => {
             </span>
           </Text>
           <Text variant="caption" className="text-white mt-4">
-            © Pavel Srom 2022
+            © Pavel Srom 2024
           </Text>
         </div>
       </Container>
