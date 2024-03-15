@@ -1,0 +1,301 @@
+---
+title: Server state at scale
+date: 2024-03-15
+description: The journey towards "tRPC Query"
+categories: react__typescript__architecture
+thumbnailUrl: https://images.unsplash.com/photo-1591617870684-6e861e6a48ad?q=80&w=640
+thumbnailReference: Edward Howell
+thumbnailSource: Unsplash
+public: true
+---
+
+It didn't take me very long into my career to realize that writing software is hard, and that
+trying to do so at scale is even harder. What exactly "scale" means can vary for different
+people and across different contexts. For me, it's a combination of the subjective complexity
+of a system, the number of people working on it, and the number of users it serves.
+
+I've worked on or even co-designed systems that were meant to be used by a handful of
+developers and serve a few thousand users, but trying to build the very same system to be
+used by dozens of developers and serve a clientelle of hundreds of thousands or even millions
+of end users is a very different undertaking. This is the kind of scale I'm talking about,
+and my first attempt at building something that can handle such scale.
+
+At my job, we've been trying to solve the issue of data fetching and server state management
+across the different parts of our apps for a while. We've tried different approaches and
+while most of them have worked reasonably well, none of them were "The One". That being said,
+I think I might have found "The One", and while it's still in its early stages, I'm hopeful,
+so take it chronologically.
+
+# The problem
+
+There are a few major things we've been struggling with:
+
+- we don't really have a unified, consistent way of fetching and managing server data - it's
+mostly a mixture of different libraries and patterns used across different places in the app
+- we're dealing with lots of repetitive, boilerplate code, causing friction and productivity
+decline, all while reinventing the wheel and making the codebase harder to maintain
+- we don't have a reliable way to handle polling based on response headers our backend APIs
+send us back
+- we don't have a way to set global settings for a given API service (set of requests,
+usually with the same base URL) in a single place - e.g. default error handling of 404
+responses or disabling retries service-wide
+
+## Thunks, SWR, and the like
+
+Some parts of our apps dispatch thunk actions, then fetch data inside of them, then dispatch
+the responses to the store along with "secondary" actions (e.g. setting loading state), then
+let the components subscribe to the store and render the data. Sounds like a mouthful and a
+lot of work, doesn't it? Well, now you know why my aversion for doing async stuff	in Redux
+grew so much over the years. To eat a soup with a fork is simply not a good idea.
+
+Other parts of our apps use SWR, and while I conceptually really root for SWR, I find it
+lacking in features. It's lightweight and enjoyable for simple use cases, but once the
+complexity goes up, SWR just doesn't cut it.
+
+**Before I continue any further, I really want to emphasize that the problems I've just listed
+are not unique to our software nor something that cannot be solved. For the most part, our
+systems are doing what they're supposed to do, and they're doing it somewhat well, but I
+believe we would be selling ourselves short if we didn't aspire to do better.**
+
+## Failed attempts
+
+We tried to come up with a Tanstack-Query-based proof of concept many months ago, but it
+didn't really go anywhere as it was lacking in features and a bit difficult to maintain and
+extend. Polling was missing altogether, and since some parts of our apps rely on it heavily
+to keep the data fresh and user experience smooth, no wonder we axed the PoC shortly
+afterwards. I have, however, learned a few valuable lessons from the experience.
+
+# The solution attempt
+
+Since I've been using Tanstack Query in my previous jobs, personal projects and since its
+inception with mere 40k weekly NPM downloads, I decided to spearhead the effort to build a
+new, unified, scalable and feature-rich server state library for our apps. The choice of
+Tanstack Query as the foundation was more or less a no-brainer - it's stood the test of time,
+proving its worth and value in many different projects of various sizes and complexities, it
+is still actively maintained (shoutout to Tanner Linsley and Dominik Dorfmeister), and it
+seems to be the most feature-rich and flexible library of its kind. Cool, now we have a
+foundation we can build upon, but what about the rest?
+
+## Back to the drawing board
+
+It was time to go back to the drawing board, endless meetings with our seniors and EMs,
+requirement specifications and gathering feedback from the rest of the team. 15+ hours of
+meetings later, we came up with the following list of major requirements:
+
+- **environment-agnostic** - we need our API services to be able to work in the browser as
+well as Node, both inside and outside React components, thus splitting responsibilities
+between the different layers of abstraction
+- **polling** - we need to be able to poll our API services based on response headers
+- **consistency** - we need a unified, consistent way of fetching and managing server data,
+ideally without much boilerplate
+- **global settings** - we need a way to set global settings for a given API service in a
+single place
+- **per-request customization** - we need to be able to attach custom data to requests, e.g.
+to pass a different token or base URL without affecting the rest of the API service
+- **great developer experience** - the abstaction layer should "make sense" and guide the
+developer in the right direction
+
+## Me, myself and Notion
+
+Whenever I design systems and abstractions, I like to start from the end and think about what
+would be the most intuitive way to use it while still conforming to the necessary
+requirements. Having requirements finally written down, I started to jot down some ideas and
+possible syntaxes in Notion. If you've ever built an abstraction layer on top of a
+lower-level API, you probably know how hard it is to strike a balance between these two. I
+came up with a few ideas:
+
+<Prism language="tsx">
+{`
+// 1. The "classic" way
+const { data, isLoading } = useQuery({
+  queryKey: ['postById', id],
+  queryFn: () => fetch('/api/post/' + id)
+  ...options
+})
+
+// 2. The "failed attempt" way
+const { data, isLoading } = useTypedQuery('getPostById', {
+  params: { id },
+  ...options
+})
+
+// 3. The "I don't know what I'm doing" way
+const { data, isLoading } = useTypedQuery({
+  fetcher: 'getPostById',
+  params: { id },
+  ...options
+})
+`}
+</Prism>
+<br />
+
+Options 2 and 3 aren't necessarily bad, but they feel very similar and there's just something
+about them that doesn't feel right. Maybe it's the having to pass the fetcher name as a
+string or having to specify the `params` object separately. Who knows...
+
+Then one evening, while randomly reading through tRPC's documentation, it hit me:
+
+<Prism language="tsx">
+{`
+const result = myService.whatRequest.whatCanHappenWithIt()
+`}
+</Prism>
+<br />
+
+Which would translate to:
+
+<Prism language="tsx">
+{`
+const query = postsService.getPostById.useQuery({ id }, options)
+
+queryClient.invalidateQueries({
+  queryKey: postsService.getPostById.getQueryKey({ id })
+})
+`}
+</Prism>
+<br />
+
+This API felt so intuitive and natural that I couldn't believe I was about to conceptually
+copy tRPC. A great benefit of this API is also the tight coupling between the query and its
+query key, which makes it easy to invalidate the query when needed - all while preserving
+the syntax and conceptual consistency `service.request.whatToDo()`.
+
+Cool, so we're basically going to build a tRPC clone, but how exactly do we do that if tRPC
+is a full-stack library and we only need the client part?
+
+## Architecture & design decisions
+
+### Why the `service.request.whatToDo()` syntax?
+
+Most of all, it allows us to use a consistent API for not only executing queries and mutations,
+but also when invalidating queries, manually setting query data, etc. Furthermore, it feels
+intuitive, natural, and it just "makes sense".
+
+### Why is `params` an object?
+
+It allows for better type inference as we don't have to rely on the order of the arguments,
+and it gives developers a better idea of what the query expects thanks to autocompletion and
+type hints.
+<br />
+
+### Why is the underlying query key an object?
+
+TkDodo wrote a great article on this topic, so I'm just going to redirect you [there](https://tkdodo.eu/blog/leveraging-the-query-function-context#object-query-keys).
+<br />
+
+### Why are some query options stripped away?
+
+We don't want to expose all of the query options to the developer because some options are
+manually set inside the abstraction layer and should not be changed - things like `queryKey`
+and `queryFn` (which are managed by the abstraction itself), `context` (which is set
+manually) and `meta` (which we don't use at all).
+<br />
+
+### Why Axios under the hood?
+
+This isn't directly related to the API design, but it is related to our separation of concerns
+and the environment-agnostic nature of our API services. Additionally, Axios's request config
+is identical to the request options we expose to the developer, allowing for a seamless
+customization and modification of base URLs, headers, etc.
+
+## The final API
+
+With all that being said, here's the final API I came up with, using an imaginary
+`postsService` as an example. Notice the inspiration from tRPC:
+
+<Prism language="tsx">
+{`
+// \`postsQueryApi\` is the hooks, \`postsUtils\` is the query client methods
+const { postsQueryApi, postsUtils } = usePostsApi()
+
+// 1. Fetching all posts
+const allPostsQuery = postsQueryApi.getAllPosts.useQuery({})
+
+// 2. Fetching a single post
+const postByIdQuery = postsQueryApi.getPostById.useQuery({ id: 1 })
+
+// 3. Fetching a single post with custom header and base URL attached
+const postByIdQuery = postsQueryApi.getPostById.useQuery({ id: 1 }, {
+  request: {
+    baseURL: 'https://api.example.com',
+    headers: {
+      'Authorization': 'Bearer 123'
+    }
+  }
+})
+
+// 4. Creating a new post, invalidating the "all posts" query on success
+const newPostMutation = postsQueryApi.createPost.useMutation({
+  onSuccess: () => {
+    postsUtils.getAllPosts.invalidate()
+  }
+})
+
+// 5. Manually setting the query data - equivalent to \`queryClient.setQueryData\`
+postsUtils.getPostById.setData({ id: 1 }, { title: 'Hello, world!' })
+
+// 6. Partial query matching support for query invalidation via a callback
+postsUtils.getPostById.invalidate(() => ({ ...partialParams }))
+
+// 7. Optimistic update for creating a new post
+const newPostMutation = postsQueryApi.createPost.useMutation({
+  onMutate: async (newPost) => {
+    // cancel the ongoing query
+    postsUtils.getAllPosts.cancel()
+    // get the previous posts data
+    const prevData = postsUtils.getAllPosts.getData()
+    // update cache with the new post
+    postsUtils.getAllPosts.setData((oldData) => {
+      return [newPost, ...oldData]
+    })
+    // return the previous data to be used in case of an error
+    return { prevData }
+  },
+  onError: (error, newPost, context) => {
+    // if the mutation fails, revert the cache back to the previous state
+    if (context?.prevData) {
+      postsUtils.getAllPosts.setData(context.prevData)
+    }
+  },
+  onSettled: () => {
+    // re-fetch the query to get the latest data
+    postsUtils.getAllPosts.invalidate()
+  }
+})
+`}
+</Prism>
+<br />
+
+The query results and mutation results are identical to what you'd get from using Tanstack
+Query directly, but the syntax is much more intuitive and consistent, there's no need to
+create custom hooks if you want to reuse the same query in different places, and you can
+do everything you need using just one or two variables.
+
+Notice how at no point do we have to worry about query keys or query functions because the
+abstraction layer handles that for us - all we have to do to work with the abstraction
+properly is to call the right method with the right request, give it the necessary params
+and options (TypeScript will help us with that), and we're good to go! This is the kind of
+developer experience I've always wanted to have.
+
+# Wrapping it all up
+
+As I started building bigger and bigger apps with more complex server state logic using
+Tanstack Query, I started to realize that even though the hooks are great, they're not
+necessarily the most intuitive and scalable way of doing things. In order for your server
+state logic to be scalable, you have to create a custom hook for every query and mutation,
+give every query a query key and a query function, and then you have to manage all of that
+yourself. This is where the idea of "tRPC Query" was born.
+
+I'm really excited about this abstraction layer because its API takes all the great stuff
+from Tanstack Query and elevates it to new heights - more consistent, more scalable, and
+hopefully also more intuitive to use. It allows you to create many different API services
+that host a virtually unlimited number of API requests - and as long as each service uses a
+unique name, you can be sure that there won't be any naming conflicts. It abstracts away the
+boring parts of Tanstack Query and lets you focus on the important stuff, all while preserving
+the great developer experience and the flexibility of the underlying library.
+
+I don't know what I would've otherwise created without stumbling upon the documentation page
+of tRPC. When you come across a great idea that you can build upon, I suggest you start from
+the end result and work your way back to the foundation. That's what I did here, it turned out
+much better than I expected and I can't wait to see how it will help us scale our server state
+management in the future.
