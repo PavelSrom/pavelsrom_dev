@@ -8,14 +8,14 @@
   "sg": {
     "title": "Front-end vývojář",
     "company": "Shape Games",
-    "period": "září 2022 - do současnosti",
+    "period": "září 2022 - prosinec 2024",
     "employment": "plný úvazek",
     "location": "on-site v Kodani, Dánsko",
     "size": "100+ zaměstnanců",
-    "description": "Mým úkolem v Shape Games je vývoj vlastních knihoven a komponent pro uživatelská rozhraní. V poslední době mám na starost také vývoj nové knihovny pro práci s asynchronním state managementem, která bude použita v celé aplikaci.",
+    "description": "Mým úkolem v Shape Games byl vývoj vlastních knihoven a komponent pro uživatelská rozhraní. Měl jsem na starost také vývoj nové knihovny pro práci s asynchronním state managementem, která měla být používána v celé aplikaci.",
     "helped": {
       "0": "vést vývoj knihovny pro asynchronní state management, která má škálovatelnost jako hlavní prioritu",
-      "1": "v průběžném vývoji několika doménových oblastí v aplikaci jako jediný webový pracovník v mém týmu",
+      "1": "ve vývoji několika doménových oblastí v aplikaci jako jediný webový pracovník v mém týmu",
       "2": "samostatně provést rozsáhlý refaktor zahrnující desítky souborů v průběhu několika týdnů",
       "3": "v přidání unit a integračních testů do klíčových částí mých oblastí odpovědnosti, aby byla zajištěna robustnost"
     }

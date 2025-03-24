@@ -8,14 +8,14 @@
   "sg": {
     "title": "Front-end developer",
     "company": "Shape Games",
-    "period": "September 2022 - present",
+    "period": "September 2022 - December 2024",
     "employment": "full-time",
     "location": "on-site from Copenhagen, Denmark",
     "size": "100+ employees",
-    "description": "My job at Shape Games is to develop custom libraries and components for user interfaces. Recently I have also been responsible for developing a new library for working with asynchronous state management which will be used throughout the application.",
+    "description": "My job at Shape Games was to develop custom libraries and components for user interfaces. I was also responsible for developing a new library for working with asynchronous state management which was going to be used throughout the application.",
     "helped": {
       "0": "leading development of a library for async state management with scalability as the main priority",
-      "1": "ongoing development of a few domain areas in the application as the only web person on my team",
+      "1": "development of a few domain areas in the application as the only web person on my team",
       "2": "single-handedly conducting a large refactor involving dozens of files over the course of a few weeks",
       "3": "adding unit and integration tests to key parts of my areas of responsibility to ensure robustness"
     }

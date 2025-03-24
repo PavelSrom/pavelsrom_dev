@@ -4,7 +4,7 @@ import { ButtonLink, Text, WhitespaceDivider } from 'ui'
 import { useTranslation } from 'lib/translation'
 import { TextWithImage } from 'components/text-with-image'
 import { FeatureGrid, IconItem } from 'components/feature-grid'
-import { BrainIcon, CocktailIcon, DumbbellIcon, LanguageIcon } from 'ui/icons'
+import { DumbbellIcon, LanguageIcon } from 'ui/icons'
 import { Story } from 'components/about/story'
 import { Seo } from 'components/seo'
 
@@ -18,19 +18,9 @@ const About: NextPage = () => {
       text: t('feature_grid.0.text'),
     },
     {
-      icon: <BrainIcon size="xxlarge" />,
+      icon: <LanguageIcon size="xxlarge" />,
       title: t('feature_grid.1.title'),
       text: t('feature_grid.1.text'),
-    },
-    {
-      icon: <CocktailIcon size="xxlarge" />,
-      title: t('feature_grid.2.title'),
-      text: t('feature_grid.2.text'),
-    },
-    {
-      icon: <LanguageIcon size="xxlarge" />,
-      title: t('feature_grid.3.title'),
-      text: t('feature_grid.3.text'),
     },
   ]
 

@@ -8,14 +8,14 @@
   "sg": {
     "title": "Front-end udvikler",
     "company": "Shape Games",
-    "period": "september 2022 - nuværende",
+    "period": "september 2022 - December 2024",
     "employment": "fultid",
     "location": "on-site i København, Danmark",
     "size": "100+ ansatte",
-    "description": "Mit job hos Shape Games er at udvikle biblioteker og komponenter til brugergrænseflader. For nylig har jeg også været ansvarlig for at udvikle et nyt bibliotek til at arbejde med asynkron state managementet, som vil blive brugt i hele applikationen.",
+    "description": "Mit job hos Shape Games var at udvikle biblioteker og komponenter til brugergrænseflader. Jeg var også ansvarlig for at udvikle et nyt bibliotek til at arbejde med asynkron state managementet, som ville blive brugt i hele applikationen.",
     "helped": {
       "0": "lede udviklingen af et bibliotek til asynkron state managementet med skalerbarhed som hovedprioritet",
-      "1": "løbende udvikling af et par domæneområder i applikationen som den eneste webperson i mit team",
+      "1": "udvikling af et par domæneområder i applikationen som den eneste webperson i mit team",
       "2": "egenhændigt at gennemføre en stor refaktorering, der involverede dusinvis af filer i løbet af et par uger",
       "3": "tilføje unit- og integrationstest til centrale dele af mine ansvarsområder for at sikre robusthed"
     }
