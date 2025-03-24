@@ -19,7 +19,7 @@ const Experience: NextPage = () => {
             <Text variant="sub" className="font-light mt-8">
               {t('landing.description')}
             </Text>
-            <ButtonLink href="#copyright-agent" size="xl" className="mt-16">
+            <ButtonLink href="#shape-games" size="xl" className="mt-16">
               {t('landing.cta')}
             </ButtonLink>
           </>
